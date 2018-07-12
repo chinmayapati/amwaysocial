@@ -1,13 +1,13 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
+    "_height_": {
         "type": "string",
-        "value": "13%"
+        "value": "25dp"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,10 +23,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s4ddc51396c0421c9c2ca1f907f4d17b",
+    "_skin_": "se393e66aa6242a397d01ac9ac8499fb",
     "_top_": {
         "type": "string",
-        "value": "9%"
+        "value": "0"
     },
     "_width_": {
         "type": "string",
@@ -35,19 +35,17 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxPosts"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxTab3",
+    "id": "flxBlankAreaPosts",
     "info": null,
     "isvisible": true,
-    "kuid": "be34917064cb4b6a8982e06d6b4e3581",
+    "kuid": "gfef25d09aa64cfca3a65dc299060bfa",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOuter",
+    "parent": "flxPosts",
     "pf": "frmDashBoard",
     "snapgridsize": 10,
     "snaptogrid": true,

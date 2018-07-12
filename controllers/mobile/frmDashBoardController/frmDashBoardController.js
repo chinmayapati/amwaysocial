@@ -19,6 +19,8 @@ define({
     for(var i=1;i<=4;i++){
       this.view["flxImg"+i].onClick = this.toggleTabs;
     }
+
+    // Set notifications
     var data = [
       {
         "badge": {
@@ -106,6 +108,371 @@ define({
       }
     ];
     this.view.segNotifications.setData(data);
+
+    // Set Posts
+    var posts = [
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": {
+          "text": "23"
+        },
+        "countLike": {
+          "text": "10"
+        },
+        "countShare": {
+          "text": "3"
+        },
+        "imgArticle": {
+          "src": "wall.jpg"
+        },
+        "imgComment": {
+          "src": "commentactive.png"
+        },
+        "imgLike": {
+          "src": "likeactive.png"
+        },
+        "imgMore": {
+          "src": "moreoptions.png"
+        },
+        "imgShare": {
+          "src": "shareactive.png"
+        },
+        "lblCount": {
+          "text": "+5"
+        },
+        "lblDesc": {
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+        },
+        "lblTime": {
+          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+        },
+        "tagText1": {
+          "text": "tag1"
+        },
+        "tagText2": {
+          "text": "tag2"
+        },
+        "tagText3": {
+          "text": "tag3"
+        }
+      },
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": {
+          "text": "23"
+        },
+        "countLike": {
+          "text": "10"
+        },
+        "countShare": {
+          "text": "3"
+        },
+        "imgArticle": {
+          "src": "wall.jpg"
+        },
+        "imgComment": {
+          "src": "commentactive.png"
+        },
+        "imgLike": {
+          "src": "likeactive.png"
+        },
+        "imgMore": {
+          "src": "moreoptions.png"
+        },
+        "imgShare": {
+          "src": "shareactive.png"
+        },
+        "lblCount": {
+          "text": "+5"
+        },
+        "lblDesc": {
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+        },
+        "lblTime": {
+          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+        },
+        "tagText1": {
+          "text": "tag1"
+        },
+        "tagText2": {
+          "text": "tag2"
+        },
+        "tagText3": {
+          "text": "tag3"
+        }
+      },
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": {
+          "text": "23"
+        },
+        "countLike": {
+          "text": "10"
+        },
+        "countShare": {
+          "text": "3"
+        },
+        "imgArticle": {
+          "src": "wall.jpg"
+        },
+        "imgComment": {
+          "src": "commentactive.png"
+        },
+        "imgLike": {
+          "src": "likeactive.png"
+        },
+        "imgMore": {
+          "src": "moreoptions.png"
+        },
+        "imgShare": {
+          "src": "shareactive.png"
+        },
+        "lblCount": {
+          "text": "+5"
+        },
+        "lblDesc": {
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+        },
+        "lblTime": {
+          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+        },
+        "tagText1": {
+          "text": "tag1"
+        },
+        "tagText2": {
+          "text": "tag2"
+        },
+        "tagText3": {
+          "text": "tag3"
+        }
+      },
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": {
+          "text": "23"
+        },
+        "countLike": {
+          "text": "10"
+        },
+        "countShare": {
+          "text": "3"
+        },
+        "imgArticle": {
+          "src": "wall.jpg"
+        },
+        "imgComment": {
+          "src": "commentactive.png"
+        },
+        "imgLike": {
+          "src": "likeactive.png"
+        },
+        "imgMore": {
+          "src": "moreoptions.png"
+        },
+        "imgShare": {
+          "src": "shareactive.png"
+        },
+        "lblCount": {
+          "text": "+5"
+        },
+        "lblDesc": {
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+        },
+        "lblTime": {
+          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+        },
+        "tagText1": {
+          "text": "tag1"
+        },
+        "tagText2": {
+          "text": "tag2"
+        },
+        "tagText3": {
+          "text": "tag3"
+        }
+      },
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": {
+          "text": "23"
+        },
+        "countLike": {
+          "text": "10"
+        },
+        "countShare": {
+          "text": "3"
+        },
+        "imgArticle": {
+          "src": "wall.jpg"
+        },
+        "imgComment": {
+          "src": "commentactive.png"
+        },
+        "imgLike": {
+          "src": "likeactive.png"
+        },
+        "imgMore": {
+          "src": "moreoptions.png"
+        },
+        "imgShare": {
+          "src": "shareactive.png"
+        },
+        "lblCount": {
+          "text": "+5"
+        },
+        "lblDesc": {
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+        },
+        "lblTime": {
+          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+        },
+        "tagText1": {
+          "text": "tag1"
+        },
+        "tagText2": {
+          "text": "tag2"
+        },
+        "tagText3": {
+          "text": "tag3"
+        }
+      },
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": {
+          "text": "23"
+        },
+        "countLike": {
+          "text": "10"
+        },
+        "countShare": {
+          "text": "3"
+        },
+        "imgArticle": {
+          "src": "wall.jpg"
+        },
+        "imgComment": {
+          "src": "commentactive.png"
+        },
+        "imgLike": {
+          "src": "likeactive.png"
+        },
+        "imgMore": {
+          "src": "moreoptions.png"
+        },
+        "imgShare": {
+          "src": "shareactive.png"
+        },
+        "lblCount": {
+          "text": "+5"
+        },
+        "lblDesc": {
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+        },
+        "lblTime": {
+          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+        },
+        "tagText1": {
+          "text": "tag1"
+        },
+        "tagText2": {
+          "text": "tag2"
+        },
+        "tagText3": {
+          "text": "tag3"
+        }
+      },
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": {
+          "text": "23"
+        },
+        "countLike": {
+          "text": "10"
+        },
+        "countShare": {
+          "text": "3"
+        },
+        "imgArticle": {
+          "src": "wall.jpg"
+        },
+        "imgComment": {
+          "src": "commentactive.png"
+        },
+        "imgLike": {
+          "src": "likeactive.png"
+        },
+        "imgMore": {
+          "src": "moreoptions.png"
+        },
+        "imgShare": {
+          "src": "shareactive.png"
+        },
+        "lblCount": {
+          "text": "+5"
+        },
+        "lblDesc": {
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+        },
+        "lblTime": {
+          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+        },
+        "tagText1": {
+          "text": "tag1"
+        },
+        "tagText2": {
+          "text": "tag2"
+        },
+        "tagText3": {
+          "text": "tag3"
+        }
+      },
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": {
+          "text": "23"
+        },
+        "countLike": {
+          "text": "10"
+        },
+        "countShare": {
+          "text": "3"
+        },
+        "imgArticle": {
+          "src": "wall.jpg"
+        },
+        "imgComment": {
+          "src": "commentactive.png"
+        },
+        "imgLike": {
+          "src": "likeactive.png"
+        },
+        "imgMore": {
+          "src": "moreoptions.png"
+        },
+        "imgShare": {
+          "src": "shareactive.png"
+        },
+        "lblCount": {
+          "text": "+5"
+        },
+        "lblDesc": {
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+        },
+        "lblTime": {
+          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+        },
+        "tagText1": {
+          "text": "tag1"
+        },
+        "tagText2": {
+          "text": "tag2"
+        },
+        "tagText3": {
+          "text": "tag3"
+        }
+      }
+    ];
+	this.view.segPosts.setData(posts);
   },
 
   openGallery:function(){
