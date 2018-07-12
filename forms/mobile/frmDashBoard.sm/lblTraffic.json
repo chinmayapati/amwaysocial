@@ -9,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "23dp"
+        "value": "20dp"
     },
     "_margin_": [
         1,
@@ -23,11 +23,11 @@
         0,
         0
     ],
-    "_skin_": "s3653ef7239f4716988cb0039ea987b8",
-    "_text_": "Tab2",
+    "_skin_": "s00f1ddca3a94976968c1008785cb149",
+    "_text_": "Customer Traffic",
     "_top_": {
         "type": "string",
-        "value": "103dp"
+        "value": "50dp"
     },
     "_width_": {
         "type": "ref",
@@ -43,7 +43,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopyLabel0hc0323a863a843",
+    "id": "lblTraffic",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,9 +56,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "fcb0b24503cb4d89abf4e65e72887171",
+    "kuid": "d578320892404f2b897b08f4d2e9e465",
     "name": "kony.ui.Label",
-    "parent": "flxTab2",
+    "parent": "flxTab1",
     "pf": "frmDashBoard",
     "tooltip": "",
     "wType": "Label",

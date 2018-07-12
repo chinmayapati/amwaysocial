@@ -9,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "23dp"
+        "value": "20dp"
     },
     "_margin_": [
         1,
@@ -23,11 +23,11 @@
         0,
         0
     ],
-    "_skin_": "sd55c51496dc4d7895cf5f4f506ddb12",
-    "_text_": "What would you ?",
+    "_skin_": "s00f1ddca3a94976968c1008785cb149",
+    "_text_": "Earnings",
     "_top_": {
         "type": "string",
-        "value": "150dp"
+        "value": "50dp"
     },
     "_width_": {
         "type": "ref",
@@ -43,7 +43,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopyLabel0bc175d0e32284c",
+    "id": "lblEarnings",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,7 +56,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "ccedf693ed1e40b39bf8c32d46241aff",
+    "kuid": "ca7a6f31ffed431c9ab7ffe9dca28103",
     "name": "kony.ui.Label",
     "parent": "flxTab2",
     "pf": "frmDashBoard",

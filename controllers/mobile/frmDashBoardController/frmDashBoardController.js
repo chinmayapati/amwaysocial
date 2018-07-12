@@ -475,7 +475,7 @@ define({
         }
       }
     ];
-	this.view.segPosts.setData(posts);
+    this.view.segPosts.setData(posts);
   },
 
   openGallery:function(){
@@ -502,6 +502,8 @@ define({
     this.view["lblTab"+tabId].skin = "lblActive";
     if(tabId == 1){
       this.myEarnings();
+    }else if(tabId == 2){
+      this.getEarnings();
     }
   },
 
@@ -527,12 +529,21 @@ define({
     this.view.flxGraph.add(chart);
   },
 
+  getEarnings:function(){
+    var chart = this.kdv_createChartWidget1();
+    this.view.flxDialer.add(chart);
+  },
+
   kdv_createChartWidget:function () {
     var chartObj = controllerReference.kdv_createChartJSObject();
     var chartWidget = new kony.ui.Chart2D3D({
       "id": "chartid",
       "isVisible": true,
-      "top":"0"
+      "top":"0",
+      "height":"90%",
+      "width":"90%",
+      "centerX":"50%",
+      "centerY":"50%"
     }, {
       "widgetAlignment": constants.WIDGET_ALIGN_CENTER,
       "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -543,7 +554,7 @@ define({
   kdv_createChartJSObject:function () {
     var chartJSObj ={
       "chartProperties":{
-        "chartHeight": 60,
+        "chartHeight": 50,
         "drawEntities":["axis","","areaChart"],            
         "areaChart":{
           "columnId": [0],
@@ -614,6 +625,185 @@ define({
     return chartJSObj;
 
   },
+
+
+
+  kdv_createChartWidget1:function() {
+    var chartObj = this.kdv_createChartJSObject1();
+    var chartWidget = new kony.ui.Chart2D3D({
+      "id": "chartid1",
+      "isVisible": true,
+      "top":"30%",
+      "height":"80%"
+    }, {
+      "widgetAlignment": constants.WIDGET_ALIGN_CENTER,
+      "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+      "containerWeight": 100
+    }, chartObj);
+    return chartWidget;
+  },
+
+
+  kdv_createChartJSObject1:function() {
+
+    var chartJSObj =
+        {
+          "chartProperties":
+          {
+            "drawEntities":["dialerChart"],
+            "chartHeight":200,
+
+            "dialerChart":
+            {
+              "radius" : 100,
+
+              //Change the below option to get different viewArea
+
+
+              "viewArea" : "topHalf",
+              "animations":{"onInitAnimation":true },
+              "background" :
+              {
+                "transparency": 100
+              },
+
+              "axis":["axisOne"],
+
+              "axisOne":
+              {
+                "visible" : true,
+                "radius" : 150,
+
+                "startValue" : 10,
+                "endValue" : 40,
+
+                "majorIntervals": 3,
+                "minorIntervals": 5,
+
+                //Change the below properties to reflect viewArea accordingly 
+
+                "startAngle" : 90,
+                "endAngle" : 270,
+                "lineColors" :
+                [
+                  {
+                    "fromAngle" : 90,
+                    "toAngle" : 150,
+                    "color" : "0x00c876ff"
+                  },
+                  {
+                    "fromAngle" : 150,
+                    "toAngle" : 210,
+                    "color" : "0x20d6b2ff"
+                  },
+                  {
+                    "fromAngle" : 210,
+                    "toAngle" : 270,
+                    "color" : "0x0092b6ff"
+                  }
+                ],
+                "lineWidth" : 20,
+
+                "intervalMarks":
+                {
+                  "visible": true,
+
+                  "major":
+                  {
+                    "visible": true,
+                    "placement": "outsideAxis",
+                    "length": -3,
+
+                    "line":
+                    {
+                      "width":[3],
+                      "color":["0x000000ff"],
+                      "transparency":[0]
+                    },
+
+                    "labels":
+                    {
+                      "visible": true,
+                      "placement": "outsideAxis",
+                      "gap": 0,
+                      "orientationAngle": 0,
+
+                      "font":
+                      {
+                        "family":["Verdana"],
+                        "style":["normal"],
+                        "size":[20],
+                        "transparency":[0],
+                        "color":["0x616161ff"]
+                      }
+                    }
+                  },
+
+                  "minor":
+                  {
+                    "visible": true,
+                    "placement": "outsideAxis",
+                    "length": -1.5,
+
+                    "line":
+                    {
+                      "width":[1],
+                      "color":["0x000000ff"],
+                      "transparency":[0]
+                    },
+
+                    "labels":
+                    {
+                      "visible": false
+                    }
+                  }
+                },
+
+                "pointer":
+                {
+                  "visible" : true,
+                  "radius" : 140,
+
+                  "borderLine":
+                  {
+                    "width":[2],
+                    "visible":true,
+                    "color":["0x000000ff"],
+                    "transparency":[50]
+                  },
+
+                  "background" : 
+                  {
+
+                    "fillType": "gradient",
+                    "color": ["0x00c876ff", "0xffffffff"]
+                  }
+                }
+              }
+            }
+          }
+          ,
+
+          "chartData":
+          {
+            "columnNames":
+            {
+              "values":["Amount1"]
+            },
+            "data":
+            {
+              "Amount1":[30]
+            },
+            "rowNames":
+            {
+              "values":["aaa"]
+            }
+          }
+        };
+    return chartJSObj;
+
+  }
+
 
 
 });

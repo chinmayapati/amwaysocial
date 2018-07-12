@@ -1,14 +1,13 @@
 {
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "60dp"
     },
     "_margin_": [
         0,
@@ -24,34 +23,33 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s8610b3d149c4c168de92158829850b6",
-    "_top_": {
-        "type": "string",
-        "value": "150dp"
-    },
+    "_skin_": "s3e950b03d8c4792afe5ebe15913eb9a",
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "65%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
+    "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "48%"
     },
-    "children": [],
+    "children": [
+        "lblInfo"
+    ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxGraph",
+    "id": "flxInfo",
     "info": null,
     "isvisible": true,
-    "kuid": "af6493b05fc74206b6b6b296748dfcdf",
+    "kuid": "d0bd239f3dbc4f4db98f15643fad7eb8",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxTab1",
-    "pf": "frmDashBoard",
+    "parent": "flxCard",
+    "pf": "CopyflxNotificationsRow0gb05e82b43f946",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
