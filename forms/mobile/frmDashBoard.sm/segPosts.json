@@ -1,0 +1,307 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_data_": [
+        {
+            "countComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23"
+            },
+            "countLike": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            },
+            "countShare": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3"
+            },
+            "imgArticle": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wall.jpg"
+            },
+            "imgComment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "commentactive.png"
+            },
+            "imgLike": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "likeactive.png"
+            },
+            "imgMore": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "moreoptions.png"
+            },
+            "imgShare": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "shareactive.png"
+            },
+            "lblCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+5"
+            },
+            "lblDesc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+            },
+            "tagText1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag1"
+            },
+            "tagText2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag2"
+            },
+            "tagText3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag3"
+            }
+        },
+        {
+            "countComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23"
+            },
+            "countLike": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            },
+            "countShare": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3"
+            },
+            "imgArticle": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wall.jpg"
+            },
+            "imgComment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "commentactive.png"
+            },
+            "imgLike": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "likeactive.png"
+            },
+            "imgMore": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "moreoptions.png"
+            },
+            "imgShare": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "shareactive.png"
+            },
+            "lblCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+5"
+            },
+            "lblDesc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+            },
+            "tagText1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag1"
+            },
+            "tagText2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag2"
+            },
+            "tagText3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag3"
+            }
+        },
+        {
+            "countComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23"
+            },
+            "countLike": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            },
+            "countShare": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3"
+            },
+            "imgArticle": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wall.jpg"
+            },
+            "imgComment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "commentactive.png"
+            },
+            "imgLike": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "likeactive.png"
+            },
+            "imgMore": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "moreoptions.png"
+            },
+            "imgShare": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "shareactive.png"
+            },
+            "lblCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+5"
+            },
+            "lblDesc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+            },
+            "tagText1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag1"
+            },
+            "tagText2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag2"
+            },
+            "tagText3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "tag3"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "jb974e48f1544beb84b1a1f3885715b4",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segPosts",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "e6c7be32898b4167adf18fbb1990d09d",
+    "masterType": 1,
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxPosts",
+    "pf": "frmDashBoard",
+    "retainselection": false,
+    "rowTemplateId": "jdf24e31fb2849a6b4ed4f111525fbb3",
+    "rowcounter": 2,
+    "rowfocusskin": "s92606991c56467fb8417220f5fb851b",
+    "rowskin": "sa83976503474e858802fed99eea9247",
+    "rowtemplate": "flxPostRow",
+    "seccounter": 0,
+    "sectionheaderskin": "sbdf27c0810a4dd8b16f460b5b3b1359",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "countComment": "countComment",
+        "countLike": "countLike",
+        "countShare": "countShare",
+        "flxArticle": "flxArticle",
+        "flxBottomDivider": "flxBottomDivider",
+        "flxComment": "flxComment",
+        "flxDetails": "flxDetails",
+        "flxDivider": "flxDivider",
+        "flxLike": "flxLike",
+        "flxMore": "flxMore",
+        "flxPost": "flxPost",
+        "flxPostRow": "flxPostRow",
+        "flxReactions": "flxReactions",
+        "flxShare": "flxShare",
+        "flxTags": "flxTags",
+        "flxTime": "flxTime",
+        "imgArticle": "imgArticle",
+        "imgComment": "imgComment",
+        "imgLike": "imgLike",
+        "imgMore": "imgMore",
+        "imgShare": "imgShare",
+        "lblCount": "lblCount",
+        "lblDesc": "lblDesc",
+        "lblTime": "lblTime",
+        "tag1": "tag1",
+        "tag2": "tag2",
+        "tag3": "tag3",
+        "tagText1": "tagText1",
+        "tagText2": "tagText2",
+        "tagText3": "tagText3"
+    },
+    "zindex": 1
+}

@@ -36,9 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopyTextField0cb4303b8f5b345",
-        "CopyLabel0c434575ae81947",
-        "CopyLabel0hb7b8f5dabdb46"
+        "lblNotifications",
+        "flxNotifications"
     ],
     "clipbounds": true,
     "containerweight": 100,

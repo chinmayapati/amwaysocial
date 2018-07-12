@@ -1,7 +1,6 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -9,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "23dp"
+        "value": "3dp"
     },
     "_margin_": [
         1,
@@ -23,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "s3653ef7239f4716988cb0039ea987b8",
-    "_text_": "Tab4",
+    "_skin_": "sb71903a9b8547f399af62a46d797ac9",
+    "_text_": "+5",
     "_top_": {
         "type": "string",
-        "value": "103dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "ref",
@@ -41,9 +40,14 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "CopyLabel0hb7b8f5dabdb46",
+    "contentalignment": 5,
+    "id": "lblCount",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +60,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "a5c5301594334eb9bc3b624da622ce5e",
+    "kuid": "b58e8a2429744b4f9b06e336e82c0a2c",
     "name": "kony.ui.Label",
-    "parent": "flxTab4",
-    "pf": "frmDashBoard",
+    "parent": "flxTags",
+    "pf": "posts",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

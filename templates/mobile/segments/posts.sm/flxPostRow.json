@@ -1,10 +1,9 @@
 {
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "90%"
+        "value": "500dp"
     },
     "_margin_": [
         0,
@@ -20,39 +19,35 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s938f46eeb874707b359efbf0c199d68",
-    "_top_": {
-        "type": "string",
-        "value": "-25dp"
-    },
-    "_width_": {
-        "type": "string",
-        "value": "25%"
-    },
+    "_skin_": "s2b25a166a4e412fad35dcad4bb5d75b",
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50.00%"
-    },
     "children": [
-        "flxCircle"
+        "flxPost"
     ],
     "clipbounds": true,
+    "containerId": true,
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "flxPostRowController"
+        }
+    },
     "enablescrolling": true,
-    "id": "flxCamera",
+    "id": "flxPostRow",
     "info": null,
+    "isTemplate": true,
     "isvisible": true,
-    "kuid": "de922264e58548d3a0b5c3dd806190e2",
+    "kuid": "a7fb1020210143728be2f553edf8b006",
     "layouttype": 2,
+    "masterType": 1,
     "name": "kony.ui.FlexContainer",
-    "parent": "footer",
-    "pf": "frmDashBoard",
+    "parent": "posts",
+    "pf": "posts",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 99
+    "widgetalignment": 1
 }

@@ -1,0 +1,158 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "badge": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "badgeblue.png"
+            },
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "dummy.jpg"
+            },
+            "lblInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div><b>John Doe</b> commented on your post.</div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "03/04/2018 @ 1:11 PM"
+            }
+        },
+        {
+            "badge": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "badgegreen.png"
+            },
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "dummy.jpg"
+            },
+            "lblInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div><b>John Doe</b> commented on your post.</div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "03/04/2018 @ 1:11 PM"
+            }
+        },
+        {
+            "badge": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "badgeorange.png"
+            },
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "dummy.jpg"
+            },
+            "lblInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div><b>John Doe</b> commented on your post.</div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "03/04/2018 @ 1:11 PM"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "bd54aad506aa401ea9ba8db39e3bfcbc",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segNotifications",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "jf2be32e2a6c4f678cc21594a2b09abc",
+    "masterType": 1,
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxNotifications",
+    "pf": "frmDashBoard",
+    "retainselection": false,
+    "rowTemplateId": "d25d8c295be74ae18ae6cff872151cd6",
+    "rowcounter": 2,
+    "rowfocusskin": "s2e6055f6efa49fdbf68ae38a744717c",
+    "rowskin": "sb3bf1ad9bcc43b79891b5c801c8eca8",
+    "rowtemplate": "flxRow",
+    "seccounter": 0,
+    "sectionheaderskin": "sb52d275d03340da81178dc4c63de23b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "badge": "badge",
+        "flxBadge": "flxBadge",
+        "flxCard": "flxCard",
+        "flxInfo": "flxInfo",
+        "flxProfileImage": "flxProfileImage",
+        "flxRow": "flxRow",
+        "imgProfile": "imgProfile",
+        "lblInfo": "lblInfo",
+        "lblTime": "lblTime"
+    },
+    "zindex": 1
+}
