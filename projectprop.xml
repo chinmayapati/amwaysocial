@@ -1,0 +1,43 @@
+<properties>
+    <attributes name="appidkey" value="Test"/>
+    <attributes name="mwaddrkey" value="192.168.1.41"/>
+    <attributes name="iospopuptransitioncorrection" value="true"/>
+    <attributes name="isNewAppWithRespectToAndroidPackageName" value="true"/>
+    <attributes name="iphonebundleversionkey" value="1.0"/>
+    <attributes name="iosrespectimagesizecorrection" value="true"/>
+    <attributes name="ioscheckboxcorrection" value="true"/>
+    <attributes name="apppackagekey" value="com.orgname.Test"/>
+    <attributes name="winmangotiletitlekey" value="Test"/>
+    <attributes name="andtargetsdkkey" value="4.0"/>
+    <attributes name="win8displaynamekey" value="Test"/>
+    <attributes name="android_allowselfsignedcertificates" value="None"/>
+    <attributes name="iphonebundleidentifierkey" value="com.kony.Test"/>
+    <attributes name="appnamekey" value="Test"/>
+    <attributes name="currentgaversion" value="7.3.0.GA_v201804091048_r22"/>
+    <attributes name="appversionkey" value="1.0.0"/>
+    <attributes name="project.type" value="js"/>
+    <attributes name="sessionmanager" value="Http Session Manager"/>
+    <attributes name="vendornamekey" value="KonyLabs"/>
+    <attributes name="appversioncode" value="1"/>
+    <attributes name="createdgaversion" value="7.3.0.21"/>
+    <attributes name="isDpScaleFactor" value="true"/>
+    <attributes name="iostextboxpaddingcorrection" value="true"/>
+    <attributes name="win6xj2meonlysupported" value="false"/>
+    <attributes name="wp10displayname" value="Test"/>
+    <attributes name="referenceWidth" value="375"/>
+    <attributes name="build" value="debug"/>
+    <attributes name="studiovizproject" value="true"/>
+    <attributes name="marginsincludedinwidgetcontainerweight" value="true"/>
+    <attributes name="mwportkey" value="80"/>
+    <attributes name="mwhttpsportkey" value="443"/>
+    <attributes name="APPLICATION_THEME" value="default"/>
+    <attributes name="SELECTED_THEME" value="default"/>
+    <attributes name="lastmodifiedtime" value="0"/>
+    <attributes name="Server side mobile web" value="false"/>
+    <attributes name="androidenablejsbindings" value="false"/>
+    <attributes name="cloud_url" value="https://amway-gmbh-dev.konycloud.com"/>
+    <attributes name="cloud_env_name" value="Amway GmbH-Amway GmbH Dev"/>
+    <attributes name="cloud_env_GUID" value="a4d38dc8-c361-465d-9858-c080c7bc3646"/>
+    <attributes name="cloud_account_id" value="100020316"/>
+    <attributes name="cloud_account_guid" value="78b3faa9-6fb9-4a41-bc4a-318fd5441497"/>
+</properties>

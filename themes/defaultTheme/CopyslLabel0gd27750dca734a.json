@@ -1,0 +1,19 @@
+{
+  "android": {
+    "font_name": "Lato-Bold"
+  },
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "font_color": "2e8efbff",
+  "font_name": "Helvetica",
+  "font_size": 214,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "s1d2e5c1259b4d2c93e4a4a07e10667f",
+  "wType": "Label"
+}
