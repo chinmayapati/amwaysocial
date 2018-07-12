@@ -11,6 +11,7 @@ define({
     this.view.flxHeader.shadowDepth = 3;
     this.view.imgInActive3.isVisible = false;
     this.view.flxTab3.left = "0%";
+    this.view.lblTab3.skin = "lblActive";
     this.view.flxCamera.onClick = this.openPop;
     this.view.flxPopup.onClick = this.closePop;
     this.view.flxGalleryBtn.onClick = this.openGallery;
@@ -35,11 +36,13 @@ define({
         if(i!=tabId){
           this.view["imgInActive"+i].isVisible = true;
           this.view["flxTab"+i].left = "100%";
+          this.view["lblTab"+i].skin = "lblInactive";
         }
       }
     }
     this.view["imgInActive"+tabId].isVisible = false;
     this.view["flxTab"+tabId].left = "0%";
+    this.view["lblTab"+tabId].skin = "lblActive";
   },
 
   closePop:function(){

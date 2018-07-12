@@ -43,9 +43,13 @@
     "children": [
         "flxCamera",
         "flxImg1",
+        "lblTab1",
         "flxImg2",
+        "lblTab2",
         "flxImg3",
-        "flxImg4"
+        "lblTab3",
+        "flxImg4",
+        "lblTab4"
     ],
     "clipbounds": false,
     "containerweight": 100,
