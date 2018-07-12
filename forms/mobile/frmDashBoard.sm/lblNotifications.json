@@ -1,7 +1,6 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -9,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "23dp"
+        "value": "20dp"
     },
     "_margin_": [
         1,
@@ -23,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "sd55c51496dc4d7895cf5f4f506ddb12",
-    "_text_": "What would you ?",
+    "_skin_": "s00f1ddca3a94976968c1008785cb149",
+    "_text_": "Notifications",
     "_top_": {
         "type": "string",
-        "value": "150dp"
+        "value": "50dp"
     },
     "_width_": {
         "type": "ref",
@@ -43,7 +42,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopyLabel0c434575ae81947",
+    "id": "lblNotifications",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,7 +55,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "c548d03aafa942a0a709e80f98ca49f8",
+    "kuid": "bccb02f0f6a54ceb9f8cb1c7ccf8cf64",
     "name": "kony.ui.Label",
     "parent": "flxTab4",
     "pf": "frmDashBoard",

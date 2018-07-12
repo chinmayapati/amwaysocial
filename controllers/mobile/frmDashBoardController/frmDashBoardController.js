@@ -19,16 +19,103 @@ define({
     for(var i=1;i<=4;i++){
       this.view["flxImg"+i].onClick = this.toggleTabs;
     }
+    var data = [
+      {
+        "badge": {
+          "src": "badgeblue.png"
+        },
+        "imgProfile": {
+          "src": "dummy.jpg"
+        },
+        "lblInfo": {
+          "text": "<div><b>John Doe</b> commented on your post.</div>"
+        },
+        "lblTime": {
+          "text": "03/04/2018 @ 1:11 PM"
+        }
+      },
+      {
+        "badge": {
+          "src": "badgegreen.png"
+        },
+        "imgProfile": {
+          "src": "dummy.jpg"
+        },
+        "lblInfo": {
+          "text": "<div><b>John Doe</b> reacted HAHA on your post.</div>"
+        },
+        "lblTime": {
+          "text": "03/04/2018 @ 1:11 PM"
+        }
+      },
+      {
+        "badge": {
+          "src": "badgeorange.png"
+        },
+        "imgProfile": {
+          "src": "dummy.jpg"
+        },
+        "lblInfo": {
+          "text": "<div><b>John Doe</b> shared your post.</div>"
+        },
+        "lblTime": {
+          "text": "03/04/2018 @ 1:11 PM"
+        }
+      },
+      {
+        "badge": {
+          "src": "badgegreen.png"
+        },
+        "imgProfile": {
+          "src": "dummy.jpg"
+        },
+        "lblInfo": {
+          "text": "<div><b>John Doe</b> reacted HAHA on your post.</div>"
+        },
+        "lblTime": {
+          "text": "03/04/2018 @ 1:11 PM"
+        }
+      },
+      {
+        "badge": {
+          "src": "badgegreen.png"
+        },
+        "imgProfile": {
+          "src": "dummy.jpg"
+        },
+        "lblInfo": {
+          "text": "<div><b>John Doe</b> reacted HAHA on your post.</div>"
+        },
+        "lblTime": {
+          "text": "03/04/2018 @ 1:11 PM"
+        }
+      },
+      {
+        "badge": {
+          "src": "badgegreen.png"
+        },
+        "imgProfile": {
+          "src": "dummy.jpg"
+        },
+        "lblInfo": {
+          "text": "<div><b>John Doe</b> reacted HAHA on your post.</div>"
+        },
+        "lblTime": {
+          "text": "03/04/2018 @ 1:11 PM"
+        }
+      }
+    ];
+    this.view.segNotifications.setData(data);
   },
 
   openGallery:function(){
     alert("gallery to be opened");
   },
-  
+
   openCamera:function(){
     alert("camera to be opened");
   },
-  
+
   toggleTabs:function(tab){
     var tabId = (tab.id)[(tab.id).length-1];
     if(this.view["imgInActive"+tabId].isVisible){
@@ -48,7 +135,7 @@ define({
   closePop:function(){
 
     animate(this.view.flxOuterBox,{centerY:"150%"},0.25,this.closePopup);
-    
+
   },
 
   closePopup:function(){
