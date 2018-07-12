@@ -1,6 +1,7 @@
 define({ 
 
   onNavigate:function(){
+    controllerReference = this;
     this.view.preShow = this.handlePreshow;
   },
 
@@ -9,6 +10,7 @@ define({
     this.view.flxCamera.shadowDepth = 2;
     this.view.flxCircle.shadowDepth = 2;
     this.view.flxHeader.shadowDepth = 3;
+    this.view.flxGraph.shadowDepth = 3;
     this.view.imgInActive3.isVisible = false;
     this.view.flxTab3.left = "0%";
     this.view.lblTab3.skin = "lblActive";
@@ -16,6 +18,7 @@ define({
     this.view.flxPopup.onClick = this.closePop;
     this.view.flxGalleryBtn.onClick = this.openGallery;
     this.view.flxCameraBtn.onClick = this.openCamera;
+
     for(var i=1;i<=4;i++){
       this.view["flxImg"+i].onClick = this.toggleTabs;
     }
@@ -24,11 +27,11 @@ define({
   openGallery:function(){
     alert("gallery to be opened");
   },
-  
+
   openCamera:function(){
     alert("camera to be opened");
   },
-  
+
   toggleTabs:function(tab){
     var tabId = (tab.id)[(tab.id).length-1];
     if(this.view["imgInActive"+tabId].isVisible){
@@ -43,24 +46,120 @@ define({
     this.view["imgInActive"+tabId].isVisible = false;
     this.view["flxTab"+tabId].left = "0%";
     this.view["lblTab"+tabId].skin = "lblActive";
+    if(tabId == 1){
+      this.myEarnings();
+    }
   },
 
   closePop:function(){
 
     animate(this.view.flxOuterBox,{centerY:"150%"},0.25,this.closePopup);
-    
+
   },
 
   closePopup:function(){
     this.view.flxPopup.skin = "opacity0";
     this.view.flxPopup.top = "100%"
   },
+
   openPop:function(){
     this.view.flxPopup.top = "0%"
     animate(this.view.flxOuterBox,{centerY:"50%"},0.25);
     this.view.flxPopup.skin = "opacity40";
   },
 
+  myEarnings:function(){
+    var chart = this.kdv_createChartWidget();
+    this.view.flxGraph.add(chart);
+  },
+
+  kdv_createChartWidget:function () {
+    var chartObj = controllerReference.kdv_createChartJSObject();
+    var chartWidget = new kony.ui.Chart2D3D({
+      "id": "chartid",
+      "isVisible": true,
+      "top":"0"
+    }, {
+      "widgetAlignment": constants.WIDGET_ALIGN_CENTER,
+      "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+      "containerWeight": 100
+    }, chartObj);
+    return chartWidget;
+  },
+  kdv_createChartJSObject:function () {
+    var chartJSObj ={
+      "chartProperties":{
+        "chartHeight": 60,
+        "drawEntities":["axis","","areaChart"],            
+        "areaChart":{
+          "columnId": [0],
+          "animations": {
+            "onInitAnimation": true,
+          },
+          "graphType": "normal",
+          "lineType": "normal",
+          "dataAlignToAxis": ["primaryYAxis"],
+          "plotMissingValues": "assumeZero",
+          /////// chart area
+          "area": {
+            "fillType": ["color"],
+            "transparency": [0],
+            "color": ["0xd9e2f1ff"],
+            "colorAboveXAxis": ["0xd9e2f1ff"],
+            "colorBelowXAxis": ["0xd9e2f1ff"],
+          },
+          /////// chart line
+          "line": {
+            "visible": true,
+            "color": ["0x6999f2ff"],
+            "width": [1],
+            "transparency": [0],
+          },
+          /////// chart plot markers
+          "plotPoints": {
+            "visible": false,
+            "colorIndicator": "columns",
+            "marker": {
+              "type": ["circle"],
+              "fillType": "color",
+            },
+            "color": ["0x6f6f6fff"],
+            "transparency": [0],
+            "size": [24],
+          },
+          /////// chart datalabels
+          "dataLabels": {
+            "visible": true,
+            "indicators": ["numberValue"],
+            "separator": "space",
+            "placement": "left",
+            "orientationAngle": 0,
+            "font": {
+              "size": [18],
+              "family": ["Lato-Bold"],
+              "style": ["Bold"],
+              "color": ["0x6f6f6fff"],
+              "transparency": [0]
+            },
+          }
+        }
+      },
+      "chartData":{
+        "columnNames":{
+          "values":["customers"]
+        },
+        "rowNames":{
+          "values":["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
+        },
+        "data":{
+          "customers":[10, 36, 24, 44,5,50,7,23,17,39,32,23],
+
+        }
+      }
+    };
+    return chartJSObj;
+
+  },
 
 
 });
