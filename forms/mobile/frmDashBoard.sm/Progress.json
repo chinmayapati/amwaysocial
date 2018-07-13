@@ -1,11 +1,14 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
+    "_height_": {
         "type": "string",
-        "value": "13%"
+        "value": "100%"
     },
-    "_left_": "0%",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         0,
         0,
@@ -20,10 +23,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s4ddc51396c0421c9c2ca1f907f4d17b",
+    "_skin_": "s5fb8e2cde5e4979b84fa368b2290bde",
     "_top_": {
         "type": "string",
-        "value": "9.00%"
+        "value": "17dp"
     },
     "_width_": {
         "type": "string",
@@ -32,26 +35,29 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "lblEarning",
-        "TotalEarns",
-        "ChainFlex"
-    ],
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxTab2",
-    "ide_onClick": "AS_FlexContainer_de3114c1d359423b924be7f598846b84",
+    "id": "Progress",
     "info": null,
     "isvisible": true,
-    "kuid": "db4795c0cc4c4f5cb2b04a9889f14918",
+    "kuid": "be3eeb5f1d2d4508b21ad36845205cfc",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOuter",
+    "parent": "ProgressFlex",
     "pf": "frmDashBoard",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 3
 }

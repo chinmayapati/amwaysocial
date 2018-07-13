@@ -1,11 +1,14 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
+    "_height_": {
         "type": "string",
-        "value": "13%"
+        "value": "49.68%"
     },
-    "_left_": "0%",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         0,
         0,
@@ -20,34 +23,35 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s4ddc51396c0421c9c2ca1f907f4d17b",
+    "_skin_": "se393e66aa6242a397d01ac9ac8499fb",
     "_top_": {
         "type": "string",
-        "value": "9.00%"
+        "value": "31dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "60%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "42.47%"
+    },
     "children": [
-        "lblEarning",
-        "TotalEarns",
-        "ChainFlex"
+        "custCountLbl"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxTab2",
-    "ide_onClick": "AS_FlexContainer_de3114c1d359423b924be7f598846b84",
+    "id": "lblFlex",
     "info": null,
     "isvisible": true,
-    "kuid": "db4795c0cc4c4f5cb2b04a9889f14918",
+    "kuid": "ga2a4bfae8a4407c9d0ad8d8b442aa26",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOuter",
+    "parent": "custFlx",
     "pf": "frmDashBoard",
     "snapgridsize": 10,
     "snaptogrid": true,

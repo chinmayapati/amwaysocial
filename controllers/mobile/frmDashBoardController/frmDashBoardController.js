@@ -4,8 +4,50 @@ define({
     controllerReference = this;
     this.view.preShow = this.handlePreshow;
   },
+  animateLine : function()
+  {
+    var self = this;
+	
+    function MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback() {}
+    self.view.Color.animate(
+    kony.ui.createAnimation({
+        "100": {
+          	"left":"-50%",
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            }
+        }
+    }), {
+        "delay": 0,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 1
+    }, {
+        "animationEnd": MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback
+    });
+    
+    self.view.ArrowFlx.isVisible = true;
+    self.view.ArrowFlx.animate(
+    kony.ui.createAnimation({
+        "100": {
+          	"centerX":"50%",
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            }
+        }
+    }), {
+        "delay": 0,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 1
+    }, {
+        "animationEnd": MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback
+    });
+  },
 
   handlePreshow:function(){
+    this.view.TotalEarns.shadowDepth = 3;
+    this.view.ChainFlex.shadowDepth = 3;
     this.view.footer.shadowDepth = 7;
     this.view.flxCamera.shadowDepth = 2;
     this.view.flxCircle.shadowDepth = 2;
@@ -515,11 +557,11 @@ define({
 
   closePopup:function(){
     this.view.flxPopup.skin = "opacity0";
-    this.view.flxPopup.top = "100%"
+    this.view.flxPopup.top = "100%";
   },
 
   openPop:function(){
-    this.view.flxPopup.top = "0%"
+    this.view.flxPopup.top = "0%";
     animate(this.view.flxOuterBox,{centerY:"50%"},0.25);
     this.view.flxPopup.skin = "opacity40";
   },
@@ -531,7 +573,9 @@ define({
 
   getEarnings:function(){
     var chart = this.kdv_createChartWidget1();
-    this.view.flxDialer.add(chart);
+    //this.view.flxDialer.add(chart);
+    this.animateLine();
+    //alert("KK");
   },
 
   kdv_createChartWidget:function () {
