@@ -198,8 +198,9 @@ define({
     controllerReference = this;
     curTab = tab ?tab :3;
     this.view.preShow = this.handlePreshow;
-
+	this.view.onDeviceBack = function() { kony.application.exit(0); };    
   },
+  
   handlePreshow:function(){
 
     this.view.footer.shadowDepth = 5;
@@ -430,6 +431,12 @@ define({
     this.view.flxPopup.top = "100%";
   },
   openPop:function(){
+    kony.print("posts :" + posts);
+    kony.print("money: " + earnings);
+    kony.print("traffic: " + traffic);
+    kony.print("notif: " + notifications);
+    kony.print("user: "+  user);
+
     this.view.flxPopup.top = "0%";
     animate(this.view.flxOuterBox,{centerY:"50%"},0.25);
     this.view.flxPopup.skin = "opacity40";
