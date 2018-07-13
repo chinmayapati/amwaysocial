@@ -25,92 +25,28 @@ define({
     }
 
     // Set notifications
-    var data = [
-      {
-        "badge": {
-          "src": "badgeblue.png"
-        },
-        "imgProfile": {
-          "src": "dummy.jpg"
-        },
-        "lblInfo": {
-          "text": "<div><b>John Doe</b> commented on your post.</div>"
-        },
-        "lblTime": {
-          "text": "03/04/2018 @ 1:11 PM"
-        }
-      },
-      {
-        "badge": {
-          "src": "badgegreen.png"
-        },
-        "imgProfile": {
-          "src": "dummy.jpg"
-        },
-        "lblInfo": {
-          "text": "<div><b>John Doe</b> reacted HAHA on your post.</div>"
-        },
-        "lblTime": {
-          "text": "03/04/2018 @ 1:11 PM"
-        }
-      },
-      {
-        "badge": {
-          "src": "badgeorange.png"
-        },
-        "imgProfile": {
-          "src": "dummy.jpg"
-        },
-        "lblInfo": {
-          "text": "<div><b>John Doe</b> shared your post.</div>"
-        },
-        "lblTime": {
-          "text": "03/04/2018 @ 1:11 PM"
-        }
-      },
-      {
-        "badge": {
-          "src": "badgegreen.png"
-        },
-        "imgProfile": {
-          "src": "dummy.jpg"
-        },
-        "lblInfo": {
-          "text": "<div><b>John Doe</b> reacted HAHA on your post.</div>"
-        },
-        "lblTime": {
-          "text": "03/04/2018 @ 1:11 PM"
-        }
-      },
-      {
-        "badge": {
-          "src": "badgegreen.png"
-        },
-        "imgProfile": {
-          "src": "dummy.jpg"
-        },
-        "lblInfo": {
-          "text": "<div><b>John Doe</b> reacted HAHA on your post.</div>"
-        },
-        "lblTime": {
-          "text": "03/04/2018 @ 1:11 PM"
-        }
-      },
-      {
-        "badge": {
-          "src": "badgegreen.png"
-        },
-        "imgProfile": {
-          "src": "dummy.jpg"
-        },
-        "lblInfo": {
-          "text": "<div><b>John Doe</b> reacted HAHA on your post.</div>"
-        },
-        "lblTime": {
-          "text": "03/04/2018 @ 1:11 PM"
-        }
-      }
-    ];
+//     var data = [
+//       {
+//         "badge": "badgeblue.png",
+//         "imgProfile": "dummy.jpg",
+//         "lblInfo": "<div><b>John Doe</b> commented on your post.</div>",
+//         "lblTime": "03/04/2018 @ 1:11 PM"
+//       }
+//     ];
+	
+    var data = [], temp, badge;
+    for(i in notifications) {
+      temp = notifications[i];
+      badge = temp.userType==1 ? "badgeblue.png" : temp.userType==2 ? "badgeorange.png" : "badgegreen.png";
+      data.push({
+        badge: badge,
+        imgProfile: "dummy.jpg",
+        lblInfo: temp.msg,
+        comment: temp.comment || "",
+        lblTime: temp.createdAt || ""
+      });
+    }
+    this.view.flxNoNotifications.isVisible = (data.length === 0);
     this.view.segNotifications.setData(data);
 
     // Set Posts
@@ -397,6 +333,7 @@ define({
     }, chartObj);
     return chartWidget;
   },
+  
   kdv_createChartJSObject:function () {
     var chartJSObj ={
       "chartProperties":{
