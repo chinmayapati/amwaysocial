@@ -25,30 +25,8 @@ define({
     }
 
     // Set notifications
-//     var data = [
-//       {
-//         "badge": "badgeblue.png",
-//         "imgProfile": "dummy.jpg",
-//         "lblInfo": "<div><b>John Doe</b> commented on your post.</div>",
-//         "lblTime": "03/04/2018 @ 1:11 PM"
-//       }
-//     ];
-	
-    var data = [], temp, badge;
-    for(i in notifications) {
-      temp = notifications[i];
-      badge = temp.userType==1 ? "badgeblue.png" : temp.userType==2 ? "badgeorange.png" : "badgegreen.png";
-      data.push({
-        badge: badge,
-        imgProfile: "dummy.jpg",
-        lblInfo: temp.msg,
-        comment: temp.comment || "",
-        lblTime: temp.createdAt || ""
-      });
-    }
-    this.view.flxNoNotifications.isVisible = (data.length === 0);
-    this.view.segNotifications.setData(data);
-
+	this.loadNotifications();
+    
     // Set Posts
     var posts = [
       {
@@ -280,11 +258,40 @@ define({
     this.view["lblTab"+tabId].skin = "lblActive";
     if(tabId == 1){
       this.myEarnings();
-    }else if(tabId == 2){
+    }
+    else if(tabId == 2){
       this.getEarnings();
+    }
+    else if(tabId == 4) {
+      this.loadNotifications();
     }
   },
 
+  loadNotifications: function() {
+    /*var data = [
+      {
+        "badge": "badgeblue.png",
+        "imgProfile": "dummy.jpg",
+        "lblInfo": "<div><b>John Doe</b> commented on your post.</div>",
+        "lblTime": "03/04/2018 @ 1:11 PM"
+      }
+    ];*/
+    var data = [], temp, badge;
+    kony.print("Notifications >> Loading : " + JSON.stringify(notifications));
+    for(var i in notifications) {
+      temp = notifications[i];
+      badge = temp.userType==1 ? "badgeblue.png" : temp.userType==2 ? "badgeorange.png" : "badgegreen.png";
+      data.push({
+        badge: badge,
+        imgProfile: "dummy.jpg",
+        lblInfo: temp.msg,
+        comment: temp.comment || "",
+        lblTime: temp.createdAt || ""
+      });
+    }
+    this.view.flxNoNotifications.isVisible = (data.length === 0);
+    this.view.segNotifications.setData(data);
+  },
   closePop:function(){
     animate(this.view.flxOuterBox,{centerY:"150%"},0.25,this.closePopup);
   },
@@ -400,7 +407,7 @@ define({
           "values":["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
         },
         "data":{
-          "customers":[10, 36, 24, 44,5,50,7,23,17,39,32,23],
+          "customers": traffic,
 
         }
       }
@@ -408,177 +415,4 @@ define({
     return chartJSObj;
 
   },
-
-  kdv_createChartWidget1:function() {
-    var chartObj = this.kdv_createChartJSObject1();
-    var chartWidget = new kony.ui.Chart2D3D({
-      "id": "chartid1",
-      "isVisible": true,
-      "top":"30%",
-      "height":"80%"
-    }, {
-      "widgetAlignment": constants.WIDGET_ALIGN_CENTER,
-      "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-      "containerWeight": 100
-    }, chartObj);
-    return chartWidget;
-  },
-
-  kdv_createChartJSObject1:function() {
-    var chartJSObj = {
-          "chartProperties":
-          {
-            "drawEntities":["dialerChart"],
-            "chartHeight":200,
-
-            "dialerChart":
-            {
-              "radius" : 100,
-
-              //Change the below option to get different viewArea
-
-
-              "viewArea" : "topHalf",
-              "animations":{"onInitAnimation":true },
-              "background" :
-              {
-                "transparency": 100
-              },
-
-              "axis":["axisOne"],
-
-              "axisOne":
-              {
-                "visible" : true,
-                "radius" : 150,
-
-                "startValue" : 10,
-                "endValue" : 40,
-
-                "majorIntervals": 3,
-                "minorIntervals": 5,
-
-                //Change the below properties to reflect viewArea accordingly 
-
-                "startAngle" : 90,
-                "endAngle" : 270,
-                "lineColors" :
-                [
-                  {
-                    "fromAngle" : 90,
-                    "toAngle" : 150,
-                    "color" : "0x00c876ff"
-                  },
-                  {
-                    "fromAngle" : 150,
-                    "toAngle" : 210,
-                    "color" : "0x20d6b2ff"
-                  },
-                  {
-                    "fromAngle" : 210,
-                    "toAngle" : 270,
-                    "color" : "0x0092b6ff"
-                  }
-                ],
-                "lineWidth" : 20,
-
-                "intervalMarks":
-                {
-                  "visible": true,
-
-                  "major":
-                  {
-                    "visible": true,
-                    "placement": "outsideAxis",
-                    "length": -3,
-
-                    "line":
-                    {
-                      "width":[3],
-                      "color":["0x000000ff"],
-                      "transparency":[0]
-                    },
-
-                    "labels":
-                    {
-                      "visible": true,
-                      "placement": "outsideAxis",
-                      "gap": 0,
-                      "orientationAngle": 0,
-
-                      "font":
-                      {
-                        "family":["Verdana"],
-                        "style":["normal"],
-                        "size":[20],
-                        "transparency":[0],
-                        "color":["0x616161ff"]
-                      }
-                    }
-                  },
-
-                  "minor":
-                  {
-                    "visible": true,
-                    "placement": "outsideAxis",
-                    "length": -1.5,
-
-                    "line":
-                    {
-                      "width":[1],
-                      "color":["0x000000ff"],
-                      "transparency":[0]
-                    },
-
-                    "labels":
-                    {
-                      "visible": false
-                    }
-                  }
-                },
-
-                "pointer":
-                {
-                  "visible" : true,
-                  "radius" : 140,
-
-                  "borderLine":
-                  {
-                    "width":[2],
-                    "visible":true,
-                    "color":["0x000000ff"],
-                    "transparency":[50]
-                  },
-
-                  "background" : 
-                  {
-
-                    "fillType": "gradient",
-                    "color": ["0x00c876ff", "0xffffffff"]
-                  }
-                }
-              }
-            }
-          }
-          ,
-
-          "chartData":
-          {
-            "columnNames":
-            {
-              "values":["Amount1"]
-            },
-            "data":
-            {
-              "Amount1":[30]
-            },
-            "rowNames":
-            {
-              "values":["aaa"]
-            }
-          }
-        };
-    return chartJSObj;
-  }
-
 });
