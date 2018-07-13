@@ -5,6 +5,9 @@ define({
             "statusBarColor": "84b8fc",
             "statusBarForegroundColor": "ffffff"
         });
+        kony.application.setApplicationBehaviors({
+            "hideDefaultLoadingIndicator": true
+        });
         // Get Me
         get(baseUrl, "Me");
         // Get Posts

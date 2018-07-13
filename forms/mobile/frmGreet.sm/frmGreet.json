@@ -15,29 +15,26 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdaf2e7e1d9d4d7fa384957f0e5ffca7",
+    "_skin_": "sf594833250a47d7bc7a34a08063a188",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
-    "allowverticalbounce": false,
     "android": {
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
         }
     },
-    "bounces": false,
     "canUpdateUI": true,
     "children": [
-        "flxOuter",
-        "flxPopup",
+        "flxMain",
         "flxLoading"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "frmDashBoardController"
+            "name": "frmGreetController"
         }
     },
     "currentLocale": "default",
@@ -47,8 +44,7 @@
     "device": "GalaxyS5",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "enablescrolling": false,
-    "id": "frmDashBoard",
+    "id": "frmGreet",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -80,7 +76,7 @@
         "titleBar": false
     },
     "isvisible": true,
-    "kuid": "g62f16cdc3f04b8488af75f32637d75f",
+    "kuid": "g97e39de2f0541adb93fb3d94b97a4d1",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": true,
@@ -105,7 +101,7 @@
         "needAppMenu": false
     },
     "titleBarSkin": "s95c74819a574699a4ee13ebe52b6e2f",
-    "titlebar": false,
+    "titlebar": true,
     "type": 3,
     "wType": "Form",
     "winphone8": {
