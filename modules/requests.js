@@ -97,7 +97,7 @@ function fetchData() {
   get(baseUrl+"traffic", "Traffic");
 
   // Get Earnings
-  get(baseUrl+"earnings", "Earnings");  
+  get(baseUrl+"earnings", "Earnings");
 }
 
 function registerServiceCall() {
