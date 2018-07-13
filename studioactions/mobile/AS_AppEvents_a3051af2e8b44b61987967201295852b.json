@@ -10,7 +10,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__f18c267f407242928396abbd7e494ae6",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.application.setApplicationProperties({\n  \"statusBarColor\":\"84b8fc\",\n  \"statusBarForegroundColor\":\"ffffff\"\n});\n\n// Get Me\nget(baseUrl, \"Me\");\n\n// Get Posts\nget(baseUrl+\"posts\", \"Posts\");\n\n// Get Notifications\nget(baseUrl+\"notifications\", \"Notifications\");\n\n// Get Traffic\nget(baseUrl+\"traffic\", \"Traffic\");\n\n// Get Earnings\nget(baseUrl+\"earnings\", \"Earnings\");",
+            "codeSnippet": "kony.application.setApplicationProperties({\n  \"statusBarColor\":\"84b8fc\",\n  \"statusBarForegroundColor\":\"ffffff\"\n});\n\nkony.application.setApplicationBehaviors({\n  \"hideDefaultLoadingIndicator\":true\n}); \n\n// Get Me\nget(baseUrl, \"Me\");\n\n// Get Posts\nget(baseUrl+\"posts\", \"Posts\");\n\n// Get Notifications\nget(baseUrl+\"notifications\", \"Notifications\");\n\n// Get Traffic\nget(baseUrl+\"traffic\", \"Traffic\");\n\n// Get Earnings\nget(baseUrl+\"earnings\", \"Earnings\");",
             "parentId": null,
             "callbackType": null
         }]
