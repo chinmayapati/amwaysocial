@@ -5,5 +5,15 @@ define({
             "statusBarColor": "84b8fc",
             "statusBarForegroundColor": "ffffff"
         });
+        // Get Me
+        get(baseUrl, "Me");
+        // Get Posts
+        get(baseUrl + "posts", "Posts");
+        // Get Notifications
+        get(baseUrl + "notifications", "Notifications");
+        // Get Traffic
+        get(baseUrl + "traffic", "Traffic");
+        // Get Earnings
+        get(baseUrl + "earnings", "Earnings");
     }
 });

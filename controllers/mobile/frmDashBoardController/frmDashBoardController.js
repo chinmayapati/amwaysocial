@@ -349,18 +349,22 @@ define({
   },
 
   closePop:function(){
-
     animate(this.view.flxOuterBox,{centerY:"150%"},0.25,this.closePopup);
-
   },
 
   closePopup:function(){
     this.view.flxPopup.skin = "opacity0";
-    this.view.flxPopup.top = "100%"
+    this.view.flxPopup.top = "100%";
   },
 
   openPop:function(){
-    this.view.flxPopup.top = "0%"
+    //     kony.print("posts :" + posts);
+    //     kony.print("money: " + earnings);
+    //     kony.print("traffic: " + traffic);
+    //     kony.print("notif: " + notifications);
+    //     kony.print("user: "+  user);
+
+    this.view.flxPopup.top = "0%";
     animate(this.view.flxOuterBox,{centerY:"50%"},0.25);
     this.view.flxPopup.skin = "opacity40";
   },
@@ -467,8 +471,6 @@ define({
 
   },
 
-
-
   kdv_createChartWidget1:function() {
     var chartObj = this.kdv_createChartJSObject1();
     var chartWidget = new kony.ui.Chart2D3D({
@@ -484,11 +486,8 @@ define({
     return chartWidget;
   },
 
-
   kdv_createChartJSObject1:function() {
-
-    var chartJSObj =
-        {
+    var chartJSObj = {
           "chartProperties":
           {
             "drawEntities":["dialerChart"],
@@ -642,9 +641,6 @@ define({
           }
         };
     return chartJSObj;
-
   }
-
-
 
 });
