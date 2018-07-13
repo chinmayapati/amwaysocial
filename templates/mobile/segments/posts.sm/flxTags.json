@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "8%"
+        "value": "7%"
     },
     "_left_": {
         "type": "string",
@@ -43,6 +43,7 @@
         "tag1",
         "tag2",
         "tag3",
+        "tag4",
         "lblCount",
         "flxMore"
     ],

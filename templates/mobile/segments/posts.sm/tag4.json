@@ -3,7 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "60%"
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4dp"
     },
     "_margin_": [
         0,
@@ -19,36 +23,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s26089839352497a80da5aa80f5c7502",
+    "_skin_": "s0a1d7592ee6463392435096497d98a5",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "20%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
+    "centery": {
         "type": "string",
         "value": "50%"
     },
     "children": [
-        "imgArticle"
+        "tagText4"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxArticle",
+    "id": "tag4",
     "info": null,
     "isvisible": true,
-    "kuid": "a47374ba74da42f28b669d78f4c7529b",
+    "kuid": "a4d4c47a4b624a56819b5755423538f4",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxPost",
+    "parent": "flxTags",
     "pf": "posts",
     "snapgridsize": 10,
     "snaptogrid": true,

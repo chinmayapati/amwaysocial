@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "50dp"
     },
     "_margin_": [
         0,
@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "s7778783d00444c083d6f998cbefb97b",
-    "_text_": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>",
+    "_text_": "Thrusday, 3pm",
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -32,7 +32,7 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "96%"
+        "value": "50%"
     },
     "containerId": true,
     "containerweight": 100,

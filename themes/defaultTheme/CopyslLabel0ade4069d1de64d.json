@@ -1,16 +1,17 @@
 {
   "android": {
-    "font_name": "Lato-Black",
+    "font_name": "Lato-Bold",
     "font_size": 100,
     "isForked": false
   },
-  "background_color": "00000000",
+  "background_color": "6f6f6f00",
   "bg_type": "one",
   "border_color": "424242ff",
   "border_style": "plain",
   "border_type": 0,
   "border_width": 0,
   "desktopweb": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
@@ -21,61 +22,75 @@
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "iphone": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "isDefaultSkin": false,
   "kiosk": {
+    "font_name": "GenericMonospace",
     "font_size": 100,
     "isForked": false
   },
-  "kuid": "s0238e41d93148149530e60965957bd5",
+  "kuid": "se4ebd69352a48748e61f3c6efba2e2f",
   "spaan": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "spaandroidtablet": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "spabb": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "spaip": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "spaipad": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "spawindowstablet": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "spawinphone8": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "tabrcandroid": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "wType": "Label",
   "watchos": {
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },
   "windows8": {
+    "font_name": "GenericMonospace",
     "font_size": 100,
     "isForked": false
   },
   "winphone8": {
+    "font_name": "GenericMonospace",
     "font_size": 100,
     "isForked": false
   }

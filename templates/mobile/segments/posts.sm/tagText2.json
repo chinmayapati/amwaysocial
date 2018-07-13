@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "sb71903a9b8547f399af62a46d797ac9",
-    "_text_": "tag2",
+    "_text_": "amway",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -46,7 +46,7 @@
     },
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "45%"
     },
     "containerId": true,
     "containerweight": 100,

@@ -126,37 +126,40 @@ define({
           "text": "3"
         },
         "imgArticle": {
-          "src": "wall.jpg"
+          "src": "selena2.jpg"
         },
         "imgComment": {
-          "src": "commentactive.png"
+          "src": "commentactive1.png"
         },
         "imgLike": {
-          "src": "likeactive.png"
+          "src": "likeactive1.png"
         },
         "imgMore": {
           "src": "moreoptions.png"
         },
         "imgShare": {
-          "src": "shareactive.png"
+          "src": "shareactive1.png"
         },
         "lblCount": {
           "text": "+5"
         },
         "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
         },
         "lblTime": {
-          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+          "text": "Thrusday, 3pm"
         },
         "tagText1": {
-          "text": "tag1"
+          "text": "amway"
         },
         "tagText2": {
-          "text": "tag2"
+          "text": "product"
         },
         "tagText3": {
-          "text": "tag3"
+          "text": "amway"
+        },
+        "tagText4": {
+          "text": "amway"
         }
       },
       {
@@ -171,37 +174,40 @@ define({
           "text": "3"
         },
         "imgArticle": {
-          "src": "wall.jpg"
+          "src": "selena1.jpg"
         },
         "imgComment": {
-          "src": "commentactive.png"
+          "src": "commentactive1.png"
         },
         "imgLike": {
-          "src": "likeactive.png"
+          "src": "likeactive1.png"
         },
         "imgMore": {
           "src": "moreoptions.png"
         },
         "imgShare": {
-          "src": "shareactive.png"
+          "src": "shareactive1.png"
         },
         "lblCount": {
           "text": "+5"
         },
         "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
         },
         "lblTime": {
-          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+          "text": "Thrusday, 3pm"
         },
         "tagText1": {
-          "text": "tag1"
+          "text": "amway"
         },
         "tagText2": {
-          "text": "tag2"
+          "text": "product"
         },
         "tagText3": {
-          "text": "tag3"
+          "text": "amway"
+        },
+        "tagText4": {
+          "text": "amway"
         }
       },
       {
@@ -216,37 +222,40 @@ define({
           "text": "3"
         },
         "imgArticle": {
-          "src": "wall.jpg"
+          "src": "selena2.jpg"
         },
         "imgComment": {
-          "src": "commentactive.png"
+          "src": "commentactive1.png"
         },
         "imgLike": {
-          "src": "likeactive.png"
+          "src": "likeactive1.png"
         },
         "imgMore": {
           "src": "moreoptions.png"
         },
         "imgShare": {
-          "src": "shareactive.png"
+          "src": "shareactive1.png"
         },
         "lblCount": {
           "text": "+5"
         },
         "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
         },
         "lblTime": {
-          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+          "text": "Thrusday, 3pm"
         },
         "tagText1": {
-          "text": "tag1"
+          "text": "amway"
         },
         "tagText2": {
-          "text": "tag2"
+          "text": "product"
         },
         "tagText3": {
-          "text": "tag3"
+          "text": "amway"
+        },
+        "tagText4": {
+          "text": "amway"
         }
       },
       {
@@ -261,219 +270,51 @@ define({
           "text": "3"
         },
         "imgArticle": {
-          "src": "wall.jpg"
+          "src": "taylor.jpg"
         },
         "imgComment": {
-          "src": "commentactive.png"
+          "src": "commentactive1.png"
         },
         "imgLike": {
-          "src": "likeactive.png"
+          "src": "likeactive1.png"
         },
         "imgMore": {
           "src": "moreoptions.png"
         },
         "imgShare": {
-          "src": "shareactive.png"
+          "src": "shareactive1.png"
         },
         "lblCount": {
           "text": "+5"
         },
         "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
         },
         "lblTime": {
-          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+          "text": "Thrusday, 3pm"
         },
         "tagText1": {
-          "text": "tag1"
+          "text": "amway"
         },
         "tagText2": {
-          "text": "tag2"
+          "text": "product"
         },
         "tagText3": {
-          "text": "tag3"
+          "text": "amway"
+        },
+        "tagText4": {
+          "text": "amway"
         }
       },
-      {
-        "flxPost": {"shadowDepth": 2},
-        "countComment": {
-          "text": "23"
-        },
-        "countLike": {
-          "text": "10"
-        },
-        "countShare": {
-          "text": "3"
-        },
-        "imgArticle": {
-          "src": "wall.jpg"
-        },
-        "imgComment": {
-          "src": "commentactive.png"
-        },
-        "imgLike": {
-          "src": "likeactive.png"
-        },
-        "imgMore": {
-          "src": "moreoptions.png"
-        },
-        "imgShare": {
-          "src": "shareactive.png"
-        },
-        "lblCount": {
-          "text": "+5"
-        },
-        "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
-        },
-        "lblTime": {
-          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
-        },
-        "tagText1": {
-          "text": "tag1"
-        },
-        "tagText2": {
-          "text": "tag2"
-        },
-        "tagText3": {
-          "text": "tag3"
-        }
-      },
-      {
-        "flxPost": {"shadowDepth": 2},
-        "countComment": {
-          "text": "23"
-        },
-        "countLike": {
-          "text": "10"
-        },
-        "countShare": {
-          "text": "3"
-        },
-        "imgArticle": {
-          "src": "wall.jpg"
-        },
-        "imgComment": {
-          "src": "commentactive.png"
-        },
-        "imgLike": {
-          "src": "likeactive.png"
-        },
-        "imgMore": {
-          "src": "moreoptions.png"
-        },
-        "imgShare": {
-          "src": "shareactive.png"
-        },
-        "lblCount": {
-          "text": "+5"
-        },
-        "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
-        },
-        "lblTime": {
-          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
-        },
-        "tagText1": {
-          "text": "tag1"
-        },
-        "tagText2": {
-          "text": "tag2"
-        },
-        "tagText3": {
-          "text": "tag3"
-        }
-      },
-      {
-        "flxPost": {"shadowDepth": 2},
-        "countComment": {
-          "text": "23"
-        },
-        "countLike": {
-          "text": "10"
-        },
-        "countShare": {
-          "text": "3"
-        },
-        "imgArticle": {
-          "src": "wall.jpg"
-        },
-        "imgComment": {
-          "src": "commentactive.png"
-        },
-        "imgLike": {
-          "src": "likeactive.png"
-        },
-        "imgMore": {
-          "src": "moreoptions.png"
-        },
-        "imgShare": {
-          "src": "shareactive.png"
-        },
-        "lblCount": {
-          "text": "+5"
-        },
-        "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
-        },
-        "lblTime": {
-          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
-        },
-        "tagText1": {
-          "text": "tag1"
-        },
-        "tagText2": {
-          "text": "tag2"
-        },
-        "tagText3": {
-          "text": "tag3"
-        }
-      },
-      {
-        "flxPost": {"shadowDepth": 2},
-        "countComment": {
-          "text": "23"
-        },
-        "countLike": {
-          "text": "10"
-        },
-        "countShare": {
-          "text": "3"
-        },
-        "imgArticle": {
-          "src": "wall.jpg"
-        },
-        "imgComment": {
-          "src": "commentactive.png"
-        },
-        "imgLike": {
-          "src": "likeactive.png"
-        },
-        "imgMore": {
-          "src": "moreoptions.png"
-        },
-        "imgShare": {
-          "src": "shareactive.png"
-        },
-        "lblCount": {
-          "text": "+5"
-        },
-        "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
-        },
-        "lblTime": {
-          "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
-        },
-        "tagText1": {
-          "text": "tag1"
-        },
-        "tagText2": {
-          "text": "tag2"
-        },
-        "tagText3": {
-          "text": "tag3"
-        }
-      }
+      
+      
+      
+     
+     
+    
+    
+     
+      
     ];
     this.view.segPosts.setData(posts);
   },

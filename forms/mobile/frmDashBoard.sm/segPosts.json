@@ -64,6 +64,10 @@
             "tagText3": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "tag3"
+            },
+            "tagText4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "amway"
             }
         },
         {
@@ -122,6 +126,10 @@
             "tagText3": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "tag3"
+            },
+            "tagText4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "amway"
             }
         },
         {
@@ -180,6 +188,10 @@
             "tagText3": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "tag3"
+            },
+            "tagText4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "amway"
             }
         }
     ],
@@ -272,14 +284,15 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "FlexContainer0j01f1cea70b444": "FlexContainer0j01f1cea70b444",
         "countComment": "countComment",
         "countLike": "countLike",
         "countShare": "countShare",
         "flxArticle": "flxArticle",
-        "flxBottomDivider": "flxBottomDivider",
         "flxComment": "flxComment",
         "flxDetails": "flxDetails",
         "flxDivider": "flxDivider",
+        "flxDivider2": "flxDivider2",
         "flxLike": "flxLike",
         "flxMore": "flxMore",
         "flxPost": "flxPost",
@@ -299,9 +312,11 @@
         "tag1": "tag1",
         "tag2": "tag2",
         "tag3": "tag3",
+        "tag4": "tag4",
         "tagText1": "tagText1",
         "tagText2": "tagText2",
-        "tagText3": "tagText3"
+        "tagText3": "tagText3",
+        "tagText4": "tagText4"
     },
     "zindex": 1
 }
