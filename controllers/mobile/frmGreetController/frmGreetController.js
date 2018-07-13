@@ -1,21 +1,23 @@
 define({ 
 
   onNavigate: function() {
-    this.view.postShow = this.handlePostshow;
+    //this.view.postShow = this.handlePostshow;
     this.view.flxMsg.centerY = "50%";
     this.view.flxMsg.isVisible = false;
     this.view.flxLoading.isVisible = true;
-  },
-  
-  handlePostshow: function () {
+
     if( !user || !posts || !notifications || !traffic || !earnings ) {
-      kony.print("No user found.");
+      kony.print("No user data found.");
       try {
         kony.timer.schedule("getuser", this.checkUser, 1, true);
       } catch(e) { kony.print("Error setting timer: " + JSON.stringify(e)); }
-      return;
     }
-    if(!user || !posts || !notifications || !traffic || !earnings) {
+    else this.handlePostshow();
+    
+  },
+  
+  handlePostshow: function () {
+    if(serviceFailed) {
       this.view.flxMsg.centerY = "30%";
       this.view.lblMsg.text = "Service Failed.";
       this.view.flxLoading.isVisible = false;
@@ -37,9 +39,19 @@ define({
   
   checkUser: function() {
     if(user && posts && notifications && traffic && earnings) {
-      kony.print("User found");
+      kony.print("User data found");
       kony.timer.cancel("getuser");      
+      requestCounter = 0;
       this.handlePostshow();
+    }
+    else {
+      requestCounter++;
+      kony.print("Counter >> " + requestCounter);
+      if(requestCounter == 5) {
+        kony.timer.cancel("getuser");
+        serviceFailed = true;
+        this.handlePostshow();
+      }
     }
   }
   
