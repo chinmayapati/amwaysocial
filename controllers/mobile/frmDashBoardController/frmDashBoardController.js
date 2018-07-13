@@ -417,11 +417,38 @@ define({
       this.view.lblTraffic.isVisible = false;
       this.view.lblEarnings.isVisible = false;
     }else{
+      this.loadNotifications();
       this.view.imgLogo.isVisible = false;
       this.view.lblNotifications.isVisible = true;
       this.view.lblTraffic.isVisible = false;
       this.view.lblEarnings.isVisible = false;
     }
+  },
+
+  loadNotifications: function() {
+    /*var data = [
+      {
+        "badge": "badgeblue.png",
+        "imgProfile": "dummy.jpg",
+        "lblInfo": "<div><b>John Doe</b> commented on your post.</div>",
+        "lblTime": "03/04/2018 @ 1:11 PM"
+      }
+    ];*/
+    var data = [], temp, badge;
+    kony.print("Notifications >> Loading : " + JSON.stringify(notifications));
+    for(var i in notifications) {
+      temp = notifications[i];
+      badge = temp.userType==1 ? "badgeblue.png" : temp.userType==2 ? "badgeorange.png" : "badgegreen.png";
+      data.push({
+        badge: badge,
+        imgProfile: "dummy.jpg",
+        lblInfo: temp.msg,
+        comment: temp.comment || "",
+        lblTime: temp.createdAt || ""
+      });
+    }
+    this.view.flxNoNotifications.isVisible = (data.length === 0);
+    this.view.segNotifications.setData(data);
   },
   closePop:function(){
     animate(this.view.flxOuterBox,{centerY:"150%"},0.25,this.closePopup);
@@ -531,7 +558,7 @@ define({
           "values":["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
         },
         "data":{
-          "customers":[10, 36, 24, 44,5,50,7,23,17,39,32,23],
+          "customers": traffic,
 
         }
       }
@@ -539,6 +566,4 @@ define({
     return chartJSObj;
 
   },
-
-
 });

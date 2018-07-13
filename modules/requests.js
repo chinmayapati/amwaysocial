@@ -1,6 +1,6 @@
 function get(url, intent) {
   kony.print("Response >> " + url);
-  
+
   var request = new kony.net.HttpRequest();
   switch(intent) {
     case "Me":
@@ -19,7 +19,7 @@ function get(url, intent) {
       request.onReadyStateChange = responseCallBackNotifications;
       break;
   }
-  
+
   request.open(constants.HTTP_METHOD_GET, url);
   request.send();
 }
@@ -51,6 +51,7 @@ function responseCallBackNotifications(){
     if (this.readyState == constants.HTTP_READY_STATE_DONE) {
       kony.print("Response >> "+ JSON.stringify(this.responseText));
       notifications = JSON.parse(this.responseText);
+      kony.print("Response >> new notifications : " + JSON.stringify(notifications));
     }
   }catch(e){
     kony.print("Response >> Exception is " + e);
@@ -77,4 +78,31 @@ function responseCallBackTraffic(){
   }catch(e){
     kony.print("Response >> Exception is " + e);
   }
+}
+
+function fetchData() {
+  kony.print("Response >> Called");
+  var baseUrl = "https://amway-chinmayapati.c9users.io/";
+ 
+  // Get Me
+  get(baseUrl, "Me");
+
+  // Get Posts
+  get(baseUrl+"posts", "Posts");
+
+  // Get Notifications
+  get(baseUrl+"notifications", "Notifications");
+
+  // Get Traffic
+  get(baseUrl+"traffic", "Traffic");
+
+  // Get Earnings
+  get(baseUrl+"earnings", "Earnings");  
+}
+
+function registerServiceCall() {
+  try {
+    kony.print("Response >> Service registered");
+    kony.timer.schedule("fetchData", fetchData, 5, true);
+  } catch(e) { kony.print("Fetching Data Failed"); }
 }
