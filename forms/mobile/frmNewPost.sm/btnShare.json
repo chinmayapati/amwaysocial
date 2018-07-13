@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_skin_": "s7569a453f67449b913002ebdb385540",
+    "_text_": "Share",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "48%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sa259e6b60c14dab9bb1c11db63152af",
+    "id": "btnShare",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d79413f94f2c47cb80be86fbfe757983",
+    "name": "kony.ui.Button",
+    "parent": "flxFooter",
+    "pf": "frmNewPost",
+    "wType": "Button",
+    "zindex": 1
+}

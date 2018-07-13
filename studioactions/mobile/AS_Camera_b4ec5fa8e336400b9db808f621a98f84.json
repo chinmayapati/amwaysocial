@@ -1,0 +1,24 @@
+{
+    "AS_Camera_b4ec5fa8e336400b9db808f621a98f84": {
+        "id": "AS_Camera_b4ec5fa8e336400b9db808f621a98f84",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmNewPost",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a0ff18b91b4f41f3ab52746758eb5065"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ee7eaa1bf9d24de9ac53285ebf6256ad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.imgPhoto.rawBytes=this.view.btnCamera.rawBytes;\nthis.view.flxSelect.isVisible=false;\nthis.view.btnCancel.isVisible=true;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

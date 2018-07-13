@@ -4,6 +4,11 @@ define({
     controllerReference = this;
     this.view.preShow = this.handlePreshow;
   },
+  onNavi:function()
+  {
+    var ntf=new kony.mvc.Navigation("frmNewPost");
+    ntf.navigate();
+  },
 
   handlePreshow:function(){
     this.view.footer.shadowDepth = 7;
@@ -14,10 +19,12 @@ define({
     this.view.imgInActive3.isVisible = false;
     this.view.flxTab3.left = "0%";
     this.view.lblTab3.skin = "lblActive";
-    this.view.flxCamera.onClick = this.openPop;
-    this.view.flxPopup.onClick = this.closePop;
-    this.view.flxGalleryBtn.onClick = this.openGallery;
-    this.view.flxCameraBtn.onClick = this.openCamera;
+    var ntf=new kony.mvc.Navigation("frmNewPost");
+    this.view.flxCamera.onTouchStart= this.onNavi;
+   
+    //this.view.flxPopup.onClick = this.closePop;
+   // this.view.flxGalleryBtn.onClick = this.openGallery;
+   // this.view.flxCameraBtn.onClick = this.openCamera;
 
     for(var i=1;i<=4;i++){
       this.view["flxImg"+i].onClick = this.toggleTabs;

@@ -1,0 +1,24 @@
+{
+    "AS_Button_g7d57055d10a4ce5b9db49a0b6071822": {
+        "id": "AS_Button_g7d57055d10a4ce5b9db49a0b6071822",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmNewPost",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a0ff18b91b4f41f3ab52746758eb5065"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e3b41044956e4f1fba771221fb6d363b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.btnCancel.onClick=this.CancelButton;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
