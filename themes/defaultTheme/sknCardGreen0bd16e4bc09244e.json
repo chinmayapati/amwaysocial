@@ -18,7 +18,8 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "border_color": "388e3c00",
-    "border_style": "plain",
+    "border_radius": 9,
+    "border_style": "custom",
     "border_type": 0,
     "border_width": 1,
     "isForked": true
@@ -80,7 +81,8 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "border_color": "388e3c00",
-    "border_style": "plain",
+    "border_radius": 9,
+    "border_style": "custom",
     "border_type": 0,
     "border_width": 1,
     "isForked": true
@@ -104,7 +106,8 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "border_color": "388e3c00",
-    "border_style": "plain",
+    "border_radius": 9,
+    "border_style": "custom",
     "border_type": 0,
     "border_width": 1,
     "isForked": true
@@ -129,7 +132,8 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "border_color": "388e3c00",
-    "border_style": "plain",
+    "border_radius": 9,
+    "border_style": "custom",
     "border_type": 0,
     "border_width": 1,
     "isForked": true
@@ -378,7 +382,8 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "border_color": "388e3c00",
-    "border_style": "plain",
+    "border_radius": 9,
+    "border_style": "custom",
     "border_type": 0,
     "border_width": 1,
     "isForked": true
@@ -403,7 +408,8 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "border_color": "388e3c00",
-    "border_style": "plain",
+    "border_radius": 9,
+    "border_style": "custom",
     "border_type": 0,
     "border_width": 1,
     "isForked": true
@@ -427,7 +433,8 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "border_color": "388e3c00",
-    "border_style": "plain",
+    "border_radius": 9,
+    "border_style": "custom",
     "border_type": 0,
     "border_width": 1,
     "isForked": true

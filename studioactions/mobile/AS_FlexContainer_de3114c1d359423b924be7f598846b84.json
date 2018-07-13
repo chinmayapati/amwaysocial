@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_de3114c1d359423b924be7f598846b84": {
+        "id": "AS_FlexContainer_de3114c1d359423b924be7f598846b84",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDashBoard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "g62f16cdc3f04b8488af75f32637d75f"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

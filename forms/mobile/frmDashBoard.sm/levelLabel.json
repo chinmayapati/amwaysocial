@@ -9,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -23,11 +23,11 @@
         0,
         0
     ],
-    "_skin_": "s00f1ddca3a94976968c1008785cb149",
-    "_text_": "Earnings",
+    "_skin_": "s0cc1fc05c90454a9562b3d11d54d26f",
+    "_text_": "50",
     "_top_": {
         "type": "string",
-        "value": "50dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "ref",
@@ -41,9 +41,13 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "lblEarnings",
+    "contentalignment": 5,
+    "id": "levelLabel",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,11 +60,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "ca7a6f31ffed431c9ab7ffe9dca28103",
+    "kuid": "a018cef15f0444c68605c55356dccce9",
     "name": "kony.ui.Label",
-    "parent": "flxTab2",
+    "parent": "ArrowFlx",
     "pf": "frmDashBoard",
     "tooltip": "",
     "wType": "Label",
-    "zindex": 1
+    "zindex": 6
 }
