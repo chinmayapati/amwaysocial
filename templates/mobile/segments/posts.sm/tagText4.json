@@ -7,8 +7,8 @@
         "value": "preferred"
     },
     "_left_": {
-        "type": "number",
-        "value": "24"
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -22,12 +22,8 @@
         0,
         0
     ],
-    "_skin_": "s0238e41d93148149530e60965957bd5",
-    "_text_": "23",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
+    "_skin_": "sb71903a9b8547f399af62a46d797ac9",
+    "_text_": "amway",
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -46,12 +42,12 @@
     },
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "45%"
     },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "countComment",
+    "id": "tagText4",
     "info": null,
     "ipad": {
         "psp": {
@@ -64,9 +60,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "i3e3e02a1f184c03a57b5cd689fd8e96",
+    "kuid": "fb99be9d2065420599511f4c3f577123",
     "name": "kony.ui.Label",
-    "parent": "flxComment",
+    "parent": "tag4",
     "pf": "posts",
     "tooltip": "",
     "wType": "Label",

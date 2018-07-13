@@ -5,6 +5,10 @@
         "type": "string",
         "value": "1%"
     },
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
     "_margin_": [
         0,
         0,
@@ -22,7 +26,7 @@
     "_skin_": "s3cf5ce69943487a9122acfddeba48b0",
     "_top_": {
         "type": "string",
-        "value": "2%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
@@ -38,11 +42,11 @@
     "children": [
         "flxTime",
         "flxArticle",
-        "flxDetails",
         "flxReactions",
+        "flxDetails",
         "flxDivider",
         "flxTags",
-        "flxBottomDivider"
+        "flxDivider2"
     ],
     "clipbounds": true,
     "containerId": true,

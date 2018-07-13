@@ -1,6 +1,6 @@
 {
   "android": {
-    "font_name": "Lato-Bold",
+    "font_name": "Lato-Regular",
     "font_size": 100,
     "isForked": false
   },
@@ -15,7 +15,7 @@
     "isForked": false
   },
   "fontSizeInPx": false,
-  "font_color": "424242ff",
+  "font_color": "00275ae5",
   "font_name": "Helvetica",
   "font_size": 100,
   "font_style": "normal",

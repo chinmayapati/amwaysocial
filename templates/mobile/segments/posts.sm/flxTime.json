@@ -26,11 +26,11 @@
     "_skin_": "s2b25a166a4e412fad35dcad4bb5d75b",
     "_top_": {
         "type": "string",
-        "value": "2%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -40,7 +40,8 @@
         "value": "50%"
     },
     "children": [
-        "lblTime"
+        "lblTime",
+        "FlexContainer0j01f1cea70b444"
     ],
     "clipbounds": true,
     "containerId": true,
