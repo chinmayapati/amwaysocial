@@ -44,7 +44,7 @@
     "enablescrolling": true,
     "id": "flxMore",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "d0c97bebbd8942779c89aecf893ce489",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

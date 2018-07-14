@@ -3,47 +3,46 @@ define({
   onNavigate:function(){
     controllerReference = this;
     this.view.preShow = this.handlePreshow;
-	this.view.onDeviceBack = function() { kony.application.exit(0); };    
+    this.view.onDeviceBack = function() { kony.application.exit(0); };    
   },
-  animateLine : function()
-  {
+  animateLine : function() {
     var self = this;
-	
+
     function MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback() {}
     self.view.Color.animate(
-    kony.ui.createAnimation({
+      kony.ui.createAnimation({
         "100": {
-          	"left":"-50%",
-            "stepConfig": {
-                "timingFunction": kony.anim.EASE
-            }
+          "left":"-50%",
+          "stepConfig": {
+            "timingFunction": kony.anim.EASE
+          }
         }
-    }), {
+      }), {
         "delay": 0,
         "iterationCount": 1,
         "fillMode": kony.anim.FILL_MODE_FORWARDS,
         "duration": 1
-    }, {
+      }, {
         "animationEnd": MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback
-    });
-    
+      });
+
     self.view.ArrowFlx.isVisible = true;
     self.view.ArrowFlx.animate(
-    kony.ui.createAnimation({
+      kony.ui.createAnimation({
         "100": {
-          	"centerX":"50%",
-            "stepConfig": {
-                "timingFunction": kony.anim.EASE
-            }
+          "centerX":"50%",
+          "stepConfig": {
+            "timingFunction": kony.anim.EASE
+          }
         }
-    }), {
+      }), {
         "delay": 0,
         "iterationCount": 1,
         "fillMode": kony.anim.FILL_MODE_FORWARDS,
         "duration": 1
-    }, {
+      }, {
         "animationEnd": MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback
-    });
+      });
   },
 
   handlePreshow:function(){
@@ -67,213 +66,10 @@ define({
     }
 
     // Set notifications
-	this.loadNotifications();
-    
+    this.loadNotifications();
+
     // Set Posts
-    var posts = [
-      {
-        "flxPost": {"shadowDepth": 2},
-        "countComment": {
-          "text": "23"
-        },
-        "countLike": {
-          "text": "10"
-        },
-        "countShare": {
-          "text": "3"
-        },
-        "imgArticle": {
-          "src": "selena2.jpg"
-        },
-        "imgComment": {
-          "src": "commentactive1.png"
-        },
-        "imgLike": {
-          "src": "likeactive1.png"
-        },
-        "imgMore": {
-          "src": "moreoptions.png"
-        },
-        "imgShare": {
-          "src": "shareactive1.png"
-        },
-        "lblCount": {
-          "text": "+5"
-        },
-        "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
-        },
-        "lblTime": {
-          "text": "Thrusday, 3pm"
-        },
-        "tagText1": {
-          "text": "amway"
-        },
-        "tagText2": {
-          "text": "product"
-        },
-        "tagText3": {
-          "text": "amway"
-        },
-        "tagText4": {
-          "text": "amway"
-        }
-      },
-      {
-        "flxPost": {"shadowDepth": 2},
-        "countComment": {
-          "text": "23"
-        },
-        "countLike": {
-          "text": "10"
-        },
-        "countShare": {
-          "text": "3"
-        },
-        "imgArticle": {
-          "src": "selena1.jpg"
-        },
-        "imgComment": {
-          "src": "commentactive1.png"
-        },
-        "imgLike": {
-          "src": "likeactive1.png"
-        },
-        "imgMore": {
-          "src": "moreoptions.png"
-        },
-        "imgShare": {
-          "src": "shareactive1.png"
-        },
-        "lblCount": {
-          "text": "+5"
-        },
-        "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
-        },
-        "lblTime": {
-          "text": "Thrusday, 3pm"
-        },
-        "tagText1": {
-          "text": "amway"
-        },
-        "tagText2": {
-          "text": "product"
-        },
-        "tagText3": {
-          "text": "amway"
-        },
-        "tagText4": {
-          "text": "amway"
-        }
-      },
-      {
-        "flxPost": {"shadowDepth": 2},
-        "countComment": {
-          "text": "23"
-        },
-        "countLike": {
-          "text": "10"
-        },
-        "countShare": {
-          "text": "3"
-        },
-        "imgArticle": {
-          "src": "selena2.jpg"
-        },
-        "imgComment": {
-          "src": "commentactive1.png"
-        },
-        "imgLike": {
-          "src": "likeactive1.png"
-        },
-        "imgMore": {
-          "src": "moreoptions.png"
-        },
-        "imgShare": {
-          "src": "shareactive1.png"
-        },
-        "lblCount": {
-          "text": "+5"
-        },
-        "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
-        },
-        "lblTime": {
-          "text": "Thrusday, 3pm"
-        },
-        "tagText1": {
-          "text": "amway"
-        },
-        "tagText2": {
-          "text": "product"
-        },
-        "tagText3": {
-          "text": "amway"
-        },
-        "tagText4": {
-          "text": "amway"
-        }
-      },
-      {
-        "flxPost": {"shadowDepth": 2},
-        "countComment": {
-          "text": "23"
-        },
-        "countLike": {
-          "text": "10"
-        },
-        "countShare": {
-          "text": "3"
-        },
-        "imgArticle": {
-          "src": "taylor.jpg"
-        },
-        "imgComment": {
-          "src": "commentactive1.png"
-        },
-        "imgLike": {
-          "src": "likeactive1.png"
-        },
-        "imgMore": {
-          "src": "moreoptions.png"
-        },
-        "imgShare": {
-          "src": "shareactive1.png"
-        },
-        "lblCount": {
-          "text": "+5"
-        },
-        "lblDesc": {
-          "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
-        },
-        "lblTime": {
-          "text": "Thrusday, 3pm"
-        },
-        "tagText1": {
-          "text": "amway"
-        },
-        "tagText2": {
-          "text": "product"
-        },
-        "tagText3": {
-          "text": "amway"
-        },
-        "tagText4": {
-          "text": "amway"
-        }
-      },
-      
-      
-      
-     
-     
-    
-    
-     
-      
-    ];
-    this.view.segPosts.setData(posts);
+    this.loadPosts();
   },
 
   openGallery:function(){
@@ -303,6 +99,9 @@ define({
     }
     else if(tabId == 2){
       this.getEarnings();
+    }
+    else if(tabId == 3) {
+      this.loadPosts();
     }
     else if(tabId == 4) {
       this.loadNotifications();
@@ -334,6 +133,60 @@ define({
     this.view.flxNoNotifications.isVisible = (data.length === 0);
     this.view.segNotifications.setData(data);
   },
+  
+  loadPosts: function() {
+    /*var posts = [
+      {
+        "flxPost": {"shadowDepth": 2},
+        "countComment": "23",
+        "countLike": "10",
+        "countShare": "3",
+        "imgArticle": "selena2.jpg",
+        "imgComment": "commentactive1.png",
+        "imgLike": "likeactive1.png",
+        "imgMore": "moreoptions.png",
+        "imgShare": "shareactive1.png",
+        "lblCount": "+5",
+        "lblDesc": "<div>" + "Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... " + "</div>",
+        "lblTime": "Thrusday, 3pm",
+        "tagText1": "amway",
+        "tagText2": "product",
+        "tagText3": "amway",
+        "tagText4": "amway"
+      }
+    ];*/
+    var data = [], temp;
+    for(var i in posts) {
+      temp = posts[i];
+      data.push({
+        flxPost: {shadowDepth: 2},
+        countComment: temp.comments,
+        countLike: temp.reactions,
+        countShare: temp.shares,
+        imgArticle: "selena2.jpg",
+        imgComment: "commentactive1.png",
+        imgLike: "likeactive1.png",
+        imgMore: "moreoptions.png",
+        imgShare: "shareactive1.png",
+        lblCount: temp.tags.length > 4 ? "+"+temp.tags.length-4 : "",
+        lblDesc: "<div>" + temp.message.length > 150 ? temp.message.length.substr(150)+"..." : temp.message + "</div>",
+        lblTime: temp.createdAt,
+        tagText1: temp.tags[0],
+        tagText2: temp.tags[1],
+        tagText3: temp.tags[2],
+        tagText4: temp.tags[3],
+        tag1: {isVisible: temp.tags[0] ? true : false},
+        tag2: {isVisible: temp.tags[1] ? true : false},
+        tag3: {isVisible: temp.tags[2] ? true : false},
+        tag4: {isVisible: temp.tags[3] ? true : false},        
+      });
+    }
+    this.view.flxNoPosts.isVisible = data.length === 0;
+    kony.print("Posts >> Length = " + data.length);
+    kony.print("Posts >> " + JSON.stringify(data));
+    this.view.segPosts.setData(data);
+  },
+  
   closePop:function(){
     animate(this.view.flxOuterBox,{centerY:"150%"},0.25,this.closePopup);
   },
@@ -380,7 +233,7 @@ define({
     }, chartObj);
     return chartWidget;
   },
-  
+
   kdv_createChartJSObject:function () {
     var chartJSObj ={
       "chartProperties":{

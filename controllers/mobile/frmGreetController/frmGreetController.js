@@ -38,21 +38,26 @@ define({
   },
   
   checkUser: function() {
-    if(user && posts && notifications && traffic && earnings) {
+    if(user && user.error) {
+      kony.print("Service >> " + JSON.stringify(user.error) );
+      kony.timer.cancel("getuser");
+      serviceFailed = true;
+      this.handlePostshow();      
+    }
+    else if(user && posts && notifications && traffic && earnings) {
       kony.print("User data found");
       kony.timer.cancel("getuser");      
       requestCounter = 0;
+      serviceFailed = false;
       this.handlePostshow();
     }
-    else {
-      requestCounter++;
-      kony.print("Counter >> " + requestCounter);
-      if(requestCounter == 5) {
-        kony.timer.cancel("getuser");
-        serviceFailed = true;
-        this.handlePostshow();
-      }
+    else if(requestCounter == 5) {
+      kony.timer.cancel("getuser");
+      serviceFailed = true;
+      this.handlePostshow();
     }
+
+    requestCounter++;
   }
   
 });
