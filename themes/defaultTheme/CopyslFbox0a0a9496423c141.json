@@ -1,10 +1,10 @@
 {
-  "background_image": "star.png",
-  "bg_type": "image",
+  "background_color": "ffffff00",
+  "bg_type": "one",
   "border_color": "000000ff",
   "border_style": "plain",
   "border_type": 0,
-  "border_width": 1,
+  "border_width": 0,
   "isDefaultSkin": false,
   "kuid": "sbb1124584804b6a999d7e6b0cda7c34",
   "wType": "FlexContainer"

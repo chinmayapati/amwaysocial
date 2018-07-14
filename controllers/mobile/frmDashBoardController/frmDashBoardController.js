@@ -5,44 +5,25 @@ define({
     this.view.preShow = this.handlePreshow;
     this.view.onDeviceBack = function() { kony.application.exit(0); };    
   },
-  animateLine : function() {
-    var self = this;
-
-    function MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback() {}
-    self.view.Color.animate(
-      kony.ui.createAnimation({
-        "100": {
-          "left":"-50%",
-          "stepConfig": {
-            "timingFunction": kony.anim.EASE
-          }
-        }
-      }), {
-        "delay": 0,
-        "iterationCount": 1,
-        "fillMode": kony.anim.FILL_MODE_FORWARDS,
-        "duration": 1
-      }, {
-        "animationEnd": MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback
-      });
-
-    self.view.ArrowFlx.isVisible = true;
-    self.view.ArrowFlx.animate(
-      kony.ui.createAnimation({
-        "100": {
-          "centerX":"50%",
-          "stepConfig": {
-            "timingFunction": kony.anim.EASE
-          }
-        }
-      }), {
-        "delay": 0,
-        "iterationCount": 1,
-        "fillMode": kony.anim.FILL_MODE_FORWARDS,
-        "duration": 1
-      }, {
-        "animationEnd": MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback
-      });
+  callB : function()
+  {
+    this.view.custCountLbl.text = "+"+customerCounter+" Customers";
+      customerCounter+=1;
+    if(customerCounter===21)
+      {
+        customerCounter=1;
+        kony.timer.cancel("mytimer12");
+      }
+  },
+  animateCounter:function()
+  {
+    kony.timer.schedule("mytimer12",this.callB, 0.05, true);    
+  },
+  animateLine : function()
+  {
+    animate(this.view.Color,{"left":"-50%"},1);
+    this.view.ArrowFlx.isVisible = true;
+    animate(this.view.ArrowFlx,{"centerX":"50%"},1);
   },
 
   handlePreshow:function(){
@@ -213,7 +194,12 @@ define({
   },
 
   getEarnings:function(){
-    this.animateLine();    
+    if(tab2Surfed === 1)
+      {
+    	this.animateLine();
+    	this.animateCounter();
+        tab2Surfed = 0;
+      }
   },
 
   kdv_createChartWidget:function () {

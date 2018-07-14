@@ -48,6 +48,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "parentChainFlex",
+    "ide_onClick": "AS_FlexContainer_ie1c1b57dd1d4e8da3c5d68c4aeb27c8",
     "info": null,
     "isvisible": true,
     "kuid": "a5fc8526fb6740d58612564d3358aac6",

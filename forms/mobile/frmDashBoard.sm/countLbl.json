@@ -6,6 +6,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "45%"
+    },
     "_margin_": [
         1,
         1,
@@ -18,8 +22,12 @@
         0,
         0
     ],
-    "_skin_": "s13203380caf4424973c7b349f8b4c76",
-    "_text_": "120",
+    "_skin_": "se40178b1fe8415bb0c5cd5bb03627de",
+    "_text_": "10",
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -32,17 +40,13 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "42.86%"
-    },
     "centery": {
         "type": "string",
-        "value": "40.00%"
+        "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "chainCount",
+    "contentalignment": 4,
+    "id": "countLbl",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +59,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "ee52732f0eab4ad3a60eccd5c008a887",
+    "kuid": "e8b3900053544e2bb907bb403576111c",
     "name": "kony.ui.Label",
-    "parent": "chainDepthCount",
+    "parent": "chainFlx",
     "pf": "frmDashBoard",
     "tooltip": "",
     "wType": "Label",
