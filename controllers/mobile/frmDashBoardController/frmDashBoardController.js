@@ -360,10 +360,7 @@ define({
   },
 
   getEarnings:function(){
-    var chart = this.kdv_createChartWidget1();
-    //this.view.flxDialer.add(chart);
-    this.animateLine();
-    //alert("KK");
+    this.animateLine();    
   },
 
   kdv_createChartWidget:function () {
