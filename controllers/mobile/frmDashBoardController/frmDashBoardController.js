@@ -5,22 +5,56 @@ define({
     this.view.preShow = this.handlePreshow;
     this.view.onDeviceBack = function() { kony.application.exit(0); };    
   },
-  callB : function()
-  {
+
+  incrementCustomers : function() {
+    if(customerCounter >= earnings.chainEarnings.connections) {
+    this.view.custCountLbl.text = "+" + earnings.chainEarnings.connections + " Customers";
+      try {
+        kony.timer.cancel("incrementCustomer");
+      } catch(e) { kony.print("Unable to cancel cust timer"); }
+    }
     this.view.custCountLbl.text = "+"+customerCounter+" Customers";
-      customerCounter+=1;
-    if(customerCounter===21)
-      {
-        customerCounter=1;
-        kony.timer.cancel("mytimer12");
-      }
+    customerCounter +=  Math.floor(earnings.chainEarnings.connections/10);
   },
-  animateCounter:function()
-  {
-    kony.timer.schedule("mytimer12",this.callB, 0.05, true);    
+  incrementTotal : function() {
+    if(totalEarningCounter >= earnings.totalEarnings.amount) {
+      this.view.totalEarnedLbl.text = "$" + earnings.totalEarnings.amount;
+      try {
+        kony.timer.cancel("incrementTotal");
+      } catch(e) { kony.print("Unable to cancel total timer"); }
+    }
+    this.view.totalEarnedLbl.text = "$" + totalEarningCounter;
+    totalEarningCounter += Math.floor(earnings.totalEarnings.amount/10);
   },
-  animateLine : function()
-  {
+  incrementChain : function() {
+    if(chainEarningCounter >= earnings.chainEarnings.amount) {
+      this.view.chainEarnedLbl.text = "$" + earnings.chainEarnings.amount;
+      try {
+        kony.timer.cancel("incrementChain");
+      } catch(e) { kony.print("Unable to cancel chain timer"); }
+    }
+    this.view.chainEarnedLbl.text = "$" + chainEarningCounter;
+    chainEarningCounter += Math.floor(earnings.chainEarnings.amount/10);
+  },
+  incrementDepth: function() {
+    if(depthCounter >= earnings.chainEarnings.depth) {
+      this.view.countLbl.text = "" + depthCounter;
+      try {
+        kony.timer.cancel("incrementDepth");
+      } catch(e) { kony.print("Unable to cancel depth timer"); }
+    }
+    this.view.countLbl.text = "" + depthCounter;
+    depthCounter +=  1;
+  },
+  animateCounter:function() {
+    try {
+      kony.timer.schedule("incrementCustomer",this.incrementCustomers, 0.05, true);
+      kony.timer.schedule("incrementTotal",this.incrementTotal, 0.05, true);
+      kony.timer.schedule("incrementChain",this.incrementChain, 0.05, true);
+      kony.timer.schedule("incrementDepth", this.incrementDepth, 0.05, true);
+    } catch(e) { kony.print("Unable to set timers."); }
+  },
+  animateLine : function() {
     animate(this.view.Color,{"left":"-50%"},1);
     this.view.ArrowFlx.isVisible = true;
     animate(this.view.ArrowFlx,{"centerX":"50%"},1);
@@ -79,7 +113,7 @@ define({
       this.myEarnings();
     }
     else if(tabId == 2){
-      this.getEarnings();
+      this.loadEarnings();
     }
     else if(tabId == 3) {
       this.loadPosts();
@@ -141,9 +175,9 @@ define({
       temp = posts[i];
       data.push({
         flxPost: {shadowDepth: 2},
-        countComment: temp.comments,
+        countComment: temp.commentsCount,
         countLike: temp.reactions,
-        countShare: temp.shares,
+        countShare: temp.sharesCount,
         imgArticle: "selena2.jpg",
         imgComment: "commentactive1.png",
         imgLike: "likeactive1.png",
@@ -166,6 +200,15 @@ define({
     kony.print("Posts >> Length = " + data.length);
     kony.print("Posts >> " + JSON.stringify(data));
     this.view.segPosts.setData(data);
+  },
+
+  loadEarnings:function(){
+    if(tab2Surfed === 1)
+    {
+      this.animateLine();
+      this.animateCounter();
+      tab2Surfed = 0;
+    }
   },
   
   closePop:function(){
@@ -191,15 +234,6 @@ define({
   myEarnings:function(){
     var chart = this.kdv_createChartWidget();
     this.view.flxGraph.add(chart);
-  },
-
-  getEarnings:function(){
-    if(tab2Surfed === 1)
-      {
-    	this.animateLine();
-    	this.animateCounter();
-        tab2Surfed = 0;
-      }
   },
 
   kdv_createChartWidget:function () {

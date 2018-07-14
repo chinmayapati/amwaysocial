@@ -6,4 +6,7 @@ var notifications = null;
 var traffic = null;
 var earnings = null;
 var customerCounter = 1;
+var totalEarningCounter = 1;
+var chainEarningCounter = 1;
+var depthCounter = 1;
 var tab2Surfed = 1;
