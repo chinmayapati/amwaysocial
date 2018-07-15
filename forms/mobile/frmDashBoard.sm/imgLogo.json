@@ -7,10 +7,6 @@
         "type": "string",
         "value": "70%"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_margin_": [
         0,
         0,
@@ -27,7 +23,7 @@
     "_src_": "amwayindiawebsiteimage.jpg",
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "23%"
     },
     "canUpdateUI": true,
     "centerx": {

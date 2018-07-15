@@ -22,7 +22,7 @@
     "_text_": "Posts",
     "_top_": {
         "type": "string",
-        "value": "60%"
+        "value": "58%"
     },
     "_width_": {
         "type": "ref",
@@ -38,7 +38,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "72.50%"
+        "value": "71%"
     },
     "containerweight": 100,
     "contentalignment": 4,

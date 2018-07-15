@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
@@ -24,7 +25,7 @@
         0
     ],
     "_skin_": "s6dc186cccc1452aa24bbb84cd421967",
-    "_src_": "moreoptions.png",
+    "_src_": "shareicon.png",
     "_top_": {
         "type": "string",
         "value": "0dp"

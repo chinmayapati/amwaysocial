@@ -1,0 +1,14 @@
+{
+  "android": {
+    "font_name": "Lato-Bold"
+  },
+  "background_color": "ffffffff",
+  "bg_type": "one",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sfa8ad9b921e40749d271c3da89738e8",
+  "wType": "Segment"
+}

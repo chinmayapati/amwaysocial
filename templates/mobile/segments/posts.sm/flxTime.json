@@ -41,7 +41,8 @@
     },
     "children": [
         "lblTime",
-        "FlexContainer0j01f1cea70b444"
+        "FlexContainer0j01f1cea70b444",
+        "flxMore"
     ],
     "clipbounds": true,
     "containerId": true,

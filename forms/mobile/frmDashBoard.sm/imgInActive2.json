@@ -50,7 +50,7 @@
     "isvisible": true,
     "kuid": "c1d4be4cfb0040149294fb20ca6dceb9",
     "name": "kony.ui.Image2",
-    "parent": "flxImg2",
+    "parent": "flxImg22",
     "pf": "frmDashBoard",
     "srcType": 1,
     "wType": "Image",

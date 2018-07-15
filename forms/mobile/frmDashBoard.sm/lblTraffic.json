@@ -7,10 +7,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "20dp"
-    },
     "_margin_": [
         1,
         1,
@@ -25,10 +21,6 @@
     ],
     "_skin_": "s00f1ddca3a94976968c1008785cb149",
     "_text_": "Customer Traffic",
-    "_top_": {
-        "type": "string",
-        "value": "50dp"
-    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -41,6 +33,14 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblTraffic",
@@ -55,10 +55,10 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "d578320892404f2b897b08f4d2e9e465",
     "name": "kony.ui.Label",
-    "parent": "flxTab1",
+    "parent": "flxHeader",
     "pf": "frmDashBoard",
     "tooltip": "",
     "wType": "Label",

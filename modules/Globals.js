@@ -4,3 +4,6 @@ var posts = null;
 var notifications = null;
 var traffic = null;
 var earnings = null;
+var post ={};
+var posts =[];
+var shared = false;

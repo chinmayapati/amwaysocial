@@ -11,187 +11,63 @@
         {
             "countComment": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "23"
+                "text": ""
             },
             "countLike": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "10"
+                "text": ""
             },
             "countShare": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "3"
+                "text": ""
             },
             "imgArticle": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "wall.jpg"
+                "src": ""
             },
             "imgComment": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "commentactive.png"
+                "src": ""
             },
             "imgLike": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "likeactive.png"
+                "src": ""
             },
             "imgMore": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "moreoptions.png"
+                "src": ""
             },
             "imgShare": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "shareactive.png"
+                "src": ""
             },
             "lblCount": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "+5"
+                "text": ""
             },
             "lblDesc": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
+                "text": ""
             },
             "lblTime": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
+                "text": ""
             },
             "tagText1": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag1"
+                "text": ""
             },
             "tagText2": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag2"
+                "text": ""
             },
             "tagText3": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag3"
+                "text": ""
             },
             "tagText4": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "amway"
-            }
-        },
-        {
-            "countComment": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "23"
-            },
-            "countLike": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "10"
-            },
-            "countShare": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "3"
-            },
-            "imgArticle": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "wall.jpg"
-            },
-            "imgComment": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "commentactive.png"
-            },
-            "imgLike": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "likeactive.png"
-            },
-            "imgMore": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "moreoptions.png"
-            },
-            "imgShare": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "shareactive.png"
-            },
-            "lblCount": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "+5"
-            },
-            "lblDesc": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
-            },
-            "lblTime": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
-            },
-            "tagText1": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag1"
-            },
-            "tagText2": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag2"
-            },
-            "tagText3": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag3"
-            },
-            "tagText4": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "amway"
-            }
-        },
-        {
-            "countComment": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "23"
-            },
-            "countLike": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "10"
-            },
-            "countShare": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "3"
-            },
-            "imgArticle": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "wall.jpg"
-            },
-            "imgComment": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "commentactive.png"
-            },
-            "imgLike": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "likeactive.png"
-            },
-            "imgMore": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "moreoptions.png"
-            },
-            "imgShare": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "shareactive.png"
-            },
-            "lblCount": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "+5"
-            },
-            "lblDesc": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui </div>"
-            },
-            "lblTime": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "<div>3<sup>rd</sup> July, 2018 @ 3:15 PM</div>"
-            },
-            "tagText1": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag1"
-            },
-            "tagText2": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag2"
-            },
-            "tagText3": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "tag3"
-            },
-            "tagText4": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "amway"
+                "text": ""
             }
         }
     ],
@@ -232,7 +108,10 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "counter": "02",
+    "counter": "00",
+    "disabledSkins": {
+        "rowFocusSkin": "s92606991c56467fb8417220f5fb851b"
+    },
     "focusedindex": null,
     "focuseditem": null,
     "generatedtemplate": "jb974e48f1544beb84b1a1f3885715b4",
@@ -265,8 +144,7 @@
     "pf": "frmDashBoard",
     "retainselection": false,
     "rowTemplateId": "jdf24e31fb2849a6b4ed4f111525fbb3",
-    "rowcounter": 2,
-    "rowfocusskin": "s92606991c56467fb8417220f5fb851b",
+    "rowcounter": 0,
     "rowskin": "sa83976503474e858802fed99eea9247",
     "rowtemplate": "flxPostRow",
     "seccounter": 0,
@@ -276,7 +154,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
     "separatorrequired": false,
     "showscrollbars": false,
@@ -292,7 +170,6 @@
         "flxComment": "flxComment",
         "flxDetails": "flxDetails",
         "flxDivider": "flxDivider",
-        "flxDivider2": "flxDivider2",
         "flxLike": "flxLike",
         "flxMore": "flxMore",
         "flxPost": "flxPost",

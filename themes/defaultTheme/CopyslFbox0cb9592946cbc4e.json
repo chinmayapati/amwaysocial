@@ -1,6 +1,6 @@
 {
-  "background_color": "6f6f6fff",
-  "bg_type": "one",
+  "background_image": "plus.png",
+  "bg_type": "image",
   "border_color": "ffffffff",
   "border_radius": 100,
   "border_style": "custom",

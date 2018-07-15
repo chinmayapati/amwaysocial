@@ -31,7 +31,7 @@
     "_skin_": "sde829f9a1f548b3964f9b6d38bc8a87",
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "97%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -42,14 +42,18 @@
     },
     "children": [
         "flxCamera",
-        "flxImg1",
+        "flxImg11",
         "lblTab1",
-        "flxImg2",
+        "flxImg1",
+        "flxImg22",
         "lblTab2",
-        "flxImg3",
+        "flxImg2",
+        "flxImg33",
         "lblTab3",
-        "flxImg4",
-        "lblTab4"
+        "flxImg3",
+        "flxImg44",
+        "lblTab4",
+        "flxImg4"
     ],
     "clipbounds": false,
     "containerweight": 100,

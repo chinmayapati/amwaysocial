@@ -36,7 +36,6 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblEarnings",
         "flxDialer"
     ],
     "clipbounds": true,

@@ -361,7 +361,7 @@
     <attributes name="deviceexception" value="Unknown Error Occurred &lt;br/&gt; Contact System Admin"/>
     <attributes name="wp81spackagepublichernamekey" value="Kony"/>
     <attributes name="HARDWARE_TEST" value="false"/>
-    <attributes name="androidenablejsbindings" value="false"/>
+    <attributes name="androidenablejsbindings" value="true"/>
     <attributes name="tcandroid240basefontsize" value="10"/>
     <attributes name="post_notification" value="false"/>
     <attributes name="certs_key_store_pwd" value="kds/0eUc+i3BqFqSkpCk4g=="/>

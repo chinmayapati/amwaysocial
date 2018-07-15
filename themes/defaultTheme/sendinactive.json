@@ -1,0 +1,11 @@
+{
+  "background_image": "sendinactive.png",
+  "bg_type": "image",
+  "border_color": "c979c9ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "s9b7ddcf32fe4482820309ac26420b34",
+  "wType": "FlexContainer"
+}

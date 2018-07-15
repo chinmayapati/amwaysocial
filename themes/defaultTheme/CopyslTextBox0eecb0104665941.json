@@ -1,0 +1,17 @@
+{
+  "android": {
+    "font_name": "Lato-Bold"
+  },
+  "background_color": "ffffffff",
+  "bg_type": "one",
+  "border_color": "282828ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 1,
+  "font_color": "6f6f6fff",
+  "font_name": "Helvetica",
+  "font_size": 125,
+  "isDefaultSkin": false,
+  "kuid": "s6342b83e5c2466b8f2fba1508d8d945",
+  "wType": "TextField"
+}

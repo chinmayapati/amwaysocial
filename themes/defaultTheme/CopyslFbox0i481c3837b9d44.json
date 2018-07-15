@@ -1,7 +1,7 @@
 {
   "background_color": "ffffffff",
   "bg_type": "one",
-  "border_color": "ffffffff",
+  "border_color": "f0f0f4ff",
   "border_radius": 15,
   "border_style": "custom",
   "border_type": 0,

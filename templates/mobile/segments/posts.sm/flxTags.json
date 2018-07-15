@@ -44,8 +44,7 @@
         "tag2",
         "tag3",
         "tag4",
-        "lblCount",
-        "flxMore"
+        "lblCount"
     ],
     "clipbounds": true,
     "containerId": true,

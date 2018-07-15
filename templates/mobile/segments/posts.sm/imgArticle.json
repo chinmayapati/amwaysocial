@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "s6dc186cccc1452aa24bbb84cd421967",
-    "_src_": "taylor.jpg",
+    "_src_": "p1.png",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -47,7 +47,7 @@
         "topLevelBox": null
     },
     "id": "imgArticle",
-    "imagescalemode": 0,
+    "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,

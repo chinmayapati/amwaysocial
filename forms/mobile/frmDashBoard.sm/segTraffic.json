@@ -1,0 +1,159 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "badge": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "badgeblue.png"
+            },
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "dummy.jpg"
+            },
+            "lblInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div><b>John Doe</b> commented on your post.</div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "03/04/2018 @ 1:11 PM"
+            }
+        },
+        {
+            "badge": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "badgeblue.png"
+            },
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "dummy.jpg"
+            },
+            "lblInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div><b>John Doe</b> commented on your post.</div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "03/04/2018 @ 1:11 PM"
+            }
+        },
+        {
+            "badge": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "badgeblue.png"
+            },
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "dummy.jpg"
+            },
+            "lblInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<div><b>John Doe</b> commented on your post.</div>"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "03/04/2018 @ 1:11 PM"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "d7b54126a8624680a3a84b4a6aefc393",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segTraffic",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "d44aee8456b54511bf6b002d09e9de23",
+    "masterType": 1,
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxTraffic",
+    "pf": "frmDashBoard",
+    "retainselection": false,
+    "rowTemplateId": "d16f6f17e92a43d989cf65c5eb4d323b",
+    "rowcounter": 2,
+    "rowfocusskin": "s2e6055f6efa49fdbf68ae38a744717c",
+    "rowskin": "sb3bf1ad9bcc43b79891b5c801c8eca8",
+    "rowtemplate": "CopyflxRow0bc6f77f4d4da44",
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sb52d275d03340da81178dc4c63de23b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CopyflxRow0bc6f77f4d4da44": "CopyflxRow0bc6f77f4d4da44",
+        "badge": "badge",
+        "flxBadge": "flxBadge",
+        "flxCard": "flxCard",
+        "flxInfo": "flxInfo",
+        "flxProfileImage": "flxProfileImage",
+        "imgProfile": "imgProfile",
+        "lblInfo": "lblInfo",
+        "lblTime": "lblTime"
+    },
+    "zindex": 1
+}

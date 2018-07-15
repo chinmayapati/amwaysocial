@@ -1,6 +1,69 @@
 {
     "NativeFunctionAPI": {
         "iOS": {},
-        "Android": {}
+        "Android": {
+            "API level 23": {
+                "android.content-Android-API level 23": {
+                    "title": "android.content",
+                    "platform": "Android",
+                    "os": "API level 23",
+                    "url": "/visualizer/nativeframeworks/android/1.0/android.content-Android-4.0.zip",
+                    "checksum": "3ce60c47b75c2ad0dc7449d6b43c2842d2b6f103",
+                    "projectName": "Sample",
+                    "filepath": "D:\\Viz7.3Work\\amwaysocial\\nativebindings\\Android\\API level 23\\android.content-Android-4.0.zip",
+                    "enable": true
+                },
+                "java.io-Android-API level 23": {
+                    "title": "java.io",
+                    "platform": "Android",
+                    "os": "API level 23",
+                    "url": "/visualizer/nativeframeworks/android/1.0/java.io-Android-4.0.zip",
+                    "checksum": "e0723cfa8b9544aa3acbed531d7d1ce656894f3f",
+                    "projectName": "Sample",
+                    "filepath": "D:\\Viz7.3Work\\amwaysocial\\nativebindings\\Android\\API level 23\\java.io-Android-4.0.zip",
+                    "enable": true
+                },
+                "java.lang-Android-API level 23": {
+                    "title": "java.lang",
+                    "platform": "Android",
+                    "os": "API level 23",
+                    "url": "/visualizer/nativeframeworks/android/1.0/java.lang-Android-4.0.zip",
+                    "checksum": "533a415b37960853c802e7f3224f45225d745029",
+                    "projectName": "Sample",
+                    "filepath": "D:\\Viz7.3Work\\amwaysocial\\nativebindings\\Android\\API level 23\\java.lang-Android-4.0.zip",
+                    "enable": true
+                },
+                "android.app-Android-API level 23": {
+                    "title": "android.app",
+                    "platform": "Android",
+                    "os": "API level 23",
+                    "url": "/visualizer/nativeframeworks/android/1.0/android.app-Android-4.0.zip",
+                    "checksum": "e888b69438a74adad3c21577c08a5d062e23664a",
+                    "projectName": "amwaysocial",
+                    "filepath": "D:\\Viz7.3Work\\amwaysocial\\nativebindings\\Android\\API level 23\\android.app-Android-4.0.zip",
+                    "enable": true
+                },
+                "android.graphics-Android-API level 23": {
+                    "title": "android.graphics",
+                    "platform": "Android",
+                    "os": "API level 23",
+                    "url": "/visualizer/nativeframeworks/android/1.0/android.graphics-Android-4.0.zip",
+                    "checksum": "d96cf862c56ae666bd5f55901d3ebe263dfd9638",
+                    "projectName": "amwaysocial",
+                    "filepath": "D:\\Viz7.3Work\\amwaysocial\\nativebindings\\Android\\API level 23\\android.graphics-Android-4.0.zip",
+                    "enable": true
+                },
+                "android.net-Android-API level 23": {
+                    "title": "android.net",
+                    "platform": "Android",
+                    "os": "API level 23",
+                    "url": "/visualizer/nativeframeworks/android/1.0/android.net-Android-4.0.zip",
+                    "checksum": "f20197e00555e1bc07d01e5d557ea448d2d06d7e",
+                    "projectName": "amwaysocial",
+                    "filepath": "D:\\Viz7.3Work\\amwaysocial\\nativebindings\\Android\\API level 23\\android.net-Android-4.0.zip",
+                    "enable": true
+                }
+            }
+        }
     }
 }

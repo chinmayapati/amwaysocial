@@ -1,59 +1,55 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "9dp"
     },
     "_margin_": [
-        0,
-        0,
-        0,
-        0
+        6,
+        6,
+        6,
+        6
     ],
-    "_orientation_": 6,
     "_padding_": [
         0,
         0,
         0,
         0
     ],
-    "_percent_": true,
-    "_skin_": "se393e66aa6242a397d01ac9ac8499fb",
+    "_skin_": "s2f0a08ba2484e92a94b40680f20dd5b",
+    "_text_": "",
     "_top_": {
-        "type": "string",
-        "value": "30%"
-    },
-    "_width_": {
-        "type": "string",
-        "value": "6.50%"
-    },
-    "allboxes": [],
-    "autogrowmode": 0,
-    "canUpdateUI": true,
-    "centerx": {
         "type": "string",
         "value": "28%"
     },
-    "children": [
-        "imgActive2",
-        "imgInActive2"
-    ],
-    "clipbounds": true,
+    "_width_": {
+        "type": "string",
+        "value": "11%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "29%"
+    },
     "containerweight": 100,
-    "enablescrolling": true,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sa259e6b60c14dab9bb1c11db63152af"
+    },
+    "displaytext": true,
     "id": "flxImg2",
     "info": null,
     "isvisible": true,
-    "kuid": "cb0474fb1cf04f68895e0e6daedb0716",
-    "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
+    "kuid": "da13079f32244f4f9fc80e366d98f3f3",
+    "name": "kony.ui.Button",
     "parent": "footer",
     "pf": "frmDashBoard",
-    "snapgridsize": 10,
-    "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "wType": "Button",
+    "zindex": 99
 }
