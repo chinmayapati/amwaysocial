@@ -15,8 +15,7 @@ define({
     else this.handlePostshow();
     
   },
-  
-  handlePostshow: function () {
+  handlePostshow: function() {
     if(serviceFailed) {
       this.view.flxMsg.centerY = "30%";
       this.view.lblMsg.text = "Service Failed.";
@@ -30,13 +29,30 @@ define({
       this.view.flxMsg.isVisible = true;
       animate(this.view.flxMsg, { centerY: "30%" }, 1, function(){
         animate(this, {centerY: "30%"}, 1, function(){
+          
+          // Sync With Store
+          var storedPosts = JSON.parse(kony.store.getItem("posts"));
+          kony.print("Match Greet>> " + JSON.stringify(storedPosts));
+          for(var i in posts) {
+            for(var j in storedPosts) {
+              if( !storedPosts[j].lblDesc ) continue;
+              storedPosts[j].lblDesc.text = storedPosts[j].lblDesc.text.replace("<div>","").replace("</div>","");
+              kony.print("Match >> " + posts[i].message + " :: " + storedPosts[j].lblDesc.text);
+              if( posts[i].message == storedPosts[j].lblDesc.text ) {
+                storedPosts[j].countLike = posts[i].reactions;
+                storedPosts[j].countComment = posts[i].commentsCount;
+                storedPosts[j].countShare = posts[i].sharesCount;              
+              }
+            }
+          }
+          kony.store.setItem("posts", JSON.stringify(storedPosts));
+
           var nav = new kony.mvc.Navigation("frmDashBoard");
           nav.navigate(3);
         }, 1);
       });
     }
-  },
-  
+  },  
   checkUser: function() {
     if(user && user.error) {
       kony.print("Service >> " + JSON.stringify(user.error) );

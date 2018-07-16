@@ -1,199 +1,5 @@
 define({ 
 
-  posts : [
-    {
-      "flxPost": {"shadowDepth": 5},
-      "countComment": {
-        "text": "23"
-      },
-      "countLike": {
-        "text": "10"
-      },
-      "countShare": {
-        "text": "3"
-      },
-      "imgArticle": {
-        "src": "p1.png"
-      },
-      "imgComment": {
-        "src": "commentactive1.png"
-      },
-      "imgLike": {
-        "src": "likeactive1.png"
-      },
-      "imgMore": {
-        "src": "moreoptions.png"
-      },
-      "imgShare": {
-        "src": "shareactive1.png"
-      },
-      "lblCount": {
-        "text": "+5"
-      },
-      "lblDesc": {
-        "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
-      },
-      "lblTime": {
-        "text": "Thrusday, 3pm"
-      },
-      "tagText1": {
-        "text": "amway"
-      },
-      "tagText2": {
-        "text": "product"
-      },
-      "tagText3": {
-        "text": "amway"
-      },
-      "tagText4": {
-        "text": "amway"
-      }
-    },
-    {
-      "flxPost": {"shadowDepth": 5},
-      "countComment": {
-        "text": "23"
-      },
-      "countLike": {
-        "text": "10"
-      },
-      "countShare": {
-        "text": "3"
-      },
-      "imgArticle": {
-        "src": "p2.png"
-      },
-      "imgComment": {
-        "src": "commentactive1.png"
-      },
-      "imgLike": {
-        "src": "likeactive1.png"
-      },
-      "imgMore": {
-        "src": "moreoptions.png"
-      },
-      "imgShare": {
-        "src": "shareactive1.png"
-      },
-      "lblCount": {
-        "text": "+5"
-      },
-      "lblDesc": {
-        "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
-      },
-      "lblTime": {
-        "text": "Thrusday, 3pm"
-      },
-      "tagText1": {
-        "text": "amway"
-      },
-      "tagText2": {
-        "text": "product"
-      },
-      "tagText3": {
-        "text": "amway"
-      },
-      "tagText4": {
-        "text": "amway"
-      }
-    },
-    {
-      "flxPost": {"shadowDepth": 5},
-      "countComment": {
-        "text": "23"
-      },
-      "countLike": {
-        "text": "10"
-      },
-      "countShare": {
-        "text": "3"
-      },
-      "imgArticle": {
-        "src": "p3.png"
-      },
-      "imgComment": {
-        "src": "commentactive1.png"
-      },
-      "imgLike": {
-        "src": "likeactive1.png"
-      },
-      "imgMore": {
-        "src": "moreoptions.png"
-      },
-      "imgShare": {
-        "src": "shareactive1.png"
-      },
-      "lblCount": {
-        "text": "+5"
-      },
-      "lblDesc": {
-        "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
-      },
-      "lblTime": {
-        "text": "Thrusday, 3pm"
-      },
-      "tagText1": {
-        "text": "amway"
-      },
-      "tagText2": {
-        "text": "product"
-      },
-      "tagText3": {
-        "text": "amway"
-      },
-      "tagText4": {
-        "text": "amway"
-      }
-    },
-    {
-      "flxPost": {"shadowDepth": 5},
-      "countComment": {
-        "text": "23"
-      },
-      "countLike": {
-        "text": "10"
-      },
-      "countShare": {
-        "text": "3"
-      },
-      "imgArticle": {
-        "src": "p4.png"
-      },
-      "imgComment": {
-        "src": "commentactive1.png"
-      },
-      "imgLike": {
-        "src": "likeactive1.png"
-      },
-      "imgMore": {
-        "src": "moreoptions.png"
-      },
-      "imgShare": {
-        "src": "shareactive1.png"
-      },
-      "lblCount": {
-        "text": "+5"
-      },
-      "lblDesc": {
-        "text": "<div>Lorem ipsum doet ipul edicsion ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui iasetyio ok jyui... </div>"
-      },
-      "lblTime": {
-        "text": "Thrusday, 3pm"
-      },
-      "tagText1": {
-        "text": "amway"
-      },
-      "tagText2": {
-        "text": "product"
-      },
-      "tagText3": {
-        "text": "amway"
-      },
-      "tagText4": {
-        "text": "amway"
-      }
-    },   
-  ],
   onNavigate:function(tab){
     controllerReference = this;
     curTab = tab ?tab :3;
@@ -311,6 +117,7 @@ define({
       });
   },
   handlePreshow:function(){
+    //this.posts = JSON.parse(kony.store.getItem("posts"));
 
     this.view.footer.shadowDepth = 5;
     this.view.flxCamera.shadowDepth = 8;
@@ -420,11 +227,19 @@ define({
 
     if(post.hasOwnProperty("flxArticle"))
       post.flxArticle.onClick = this.showTags;
-
-    this.posts.unshift(post);
-    kony.store.setItem("posts", JSON.stringify(this.posts));
+    
+    var blank = true;
+    for(var j in post){ 
+      if(post[j]) { blank = false; break; }      
+    }
+    
+    if(!blank) {
+      posts.unshift(post);      
+      kony.store.setItem("posts", JSON.stringify(posts));
+    }
     post={};
-    this.view.segPosts.setData(this.posts);
+    this.view.flxNoPosts.isVisible = posts.length===0;
+    this.view.segPosts.setData(posts);
     //this.loadNotifications();
 
     // Set Posts
@@ -433,7 +248,7 @@ define({
   shareContent:function(){
     var selectedIndex = this.view.segPosts.selectedIndex[1];
     var data = this.view.segPosts.selectedItems[0];
-    var description =  data["lblDesc"]["text"].replace("<div>", "").replace("</div>", "");
+    var description =  data["lblDesc"]["text"];
     shareContentAndroid(description, data.imageName);
   },
   showTags:function(){
@@ -586,32 +401,35 @@ define({
         "tagText4": "amway"
       }
     ];*/
-    var data = [], temp;
-    for(var i in posts) {
-      temp = posts[i];
-      data.push({
-        flxPost: {shadowDepth: 2},
-        countComment: temp.comments,
-        countLike: temp.reactions,
-        countShare: temp.shares,
-        imgArticle: "selena2.jpg",
-        imgComment: "commentactive1.png",
-        imgLike: "likeactive1.png",
-        imgMore: "moreoptions.png",
-        imgShare: "shareactive1.png",
-        lblCount: temp.tags.length > 4 ? "+"+temp.tags.length-4 : "",
-        lblDesc: "<div>" + temp.message.length > 150 ? temp.message.length.substr(150)+"..." : temp.message + "</div>",
-        lblTime: temp.createdAt,
-        tagText1: temp.tags[0],
-        tagText2: temp.tags[1],
-        tagText3: temp.tags[2],
-        tagText4: temp.tags[3],
-        tag1: {isVisible: temp.tags[0] ? true : false},
-        tag2: {isVisible: temp.tags[1] ? true : false},
-        tag3: {isVisible: temp.tags[2] ? true : false},
-        tag4: {isVisible: temp.tags[3] ? true : false},        
-      });
-    }
+    //var data = [], temp;
+    //     for(var i in posts) {
+    //       temp = posts[i];
+    //       data.push({
+    //         flxPost: {shadowDepth: 2},
+    //         countComment: temp.comments,
+    //         countLike: temp.reactions,
+    //         countShare: temp.shares,
+    //         imgArticle: "selena2.jpg",
+    //         imgComment: "commentactive1.png",
+    //         imgLike: "likeactive1.png",
+    //         imgMore: "moreoptions.png",
+    //         imgShare: "shareactive1.png",
+    //         lblCount: temp.tags.length > 4 ? "+"+temp.tags.length-4 : "",
+    //         lblDesc: "<div>" + temp.message.length > 150 ? temp.message.length.substr(150)+"..." : temp.message + "</div>",
+    //         lblTime: temp.createdAt,
+    //         tagText1: temp.tags[0],
+    //         tagText2: temp.tags[1],
+    //         tagText3: temp.tags[2],
+    //         tagText4: temp.tags[3],
+    //         tag1: {isVisible: temp.tags[0] ? true : false},
+    //         tag2: {isVisible: temp.tags[1] ? true : false},
+    //         tag3: {isVisible: temp.tags[2] ? true : false},
+    //         tag4: {isVisible: temp.tags[3] ? true : false},        
+    //       });
+    //     }
+    
+    var data = posts;//JSON.parse(kony.store.getItem("posts"));
+    kony.print("Post Loading >> " + JSON.stringify(data) );
     this.view.flxNoPosts.isVisible = data.length === 0;
     kony.print("Posts >> Length = " + data.length);
     kony.print("Posts >> " + JSON.stringify(data));

@@ -197,7 +197,7 @@ define({
         "isVisible": hashtagCount >4 ? true:false
       },
       "lblDesc": {
-        "text": "<div>"+description+"</div>"
+        "text": description
       },
       "lblTime": {
         "text": date
