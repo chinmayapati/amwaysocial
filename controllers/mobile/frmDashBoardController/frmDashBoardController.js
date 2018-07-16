@@ -239,7 +239,6 @@ define({
         "animationEnd": MOVE_ACTION____e461951b7b7640b78e57b274bcfbe3cb_Callback
       });
   },
-
   handlePreshow:function(){
 
     this.view.footer.shadowDepth = 5;
@@ -344,23 +343,22 @@ define({
       }
     ];
     this.view.segNotifications.setData(data);
+    
     if(post.hasOwnProperty("flxMore"))
       post.flxMore.onClick = this.shareContent;
 
     if(post.hasOwnProperty("flxArticle"))
       post.flxArticle.onClick = this.showTags;
-    
+
     this.posts.unshift(post);
     kony.store.setItem("posts", JSON.stringify(this.posts));
     post={};
     this.view.segPosts.setData(this.posts);
-    this.loadNotifications();
+    //this.loadNotifications();
 
     // Set Posts
-   // this.loadPosts();
+    // this.loadPosts();
   },
-
-
   shareContent:function(){
     var selectedIndex = this.view.segPosts.selectedIndex[1];
     var data = this.view.segPosts.selectedItems[0];
@@ -391,6 +389,7 @@ define({
     alert("camera to be opened");
   },
   selectedTab:function(tabId){
+    
     if(this.view["imgInActive"+tabId].isVisible){
       for(var i=1;i<=4;i++){
         if(i!=tabId){
@@ -417,11 +416,13 @@ define({
       this.view.lblTraffic.isVisible = false;
       this.view.lblEarnings.isVisible = true;
     }else if(tabId == 3){
+      this.loadPosts();
       this.view.imgLogo.isVisible = true;
       this.view.lblNotifications.isVisible = false;
       this.view.lblTraffic.isVisible = false;
       this.view.lblEarnings.isVisible = false;
     }else{
+      this.loadNotifications();
       this.view.imgLogo.isVisible = false;
       this.view.lblNotifications.isVisible = true;
       this.view.lblTraffic.isVisible = false;
@@ -468,7 +469,6 @@ define({
       this.view.lblEarnings.isVisible = false;
     }
   },
-
   loadNotifications: function() {
     /*var data = [
       {
@@ -494,7 +494,6 @@ define({
     this.view.flxNoNotifications.isVisible = (data.length === 0);
     this.view.segNotifications.setData(data);
   },
-  
   loadPosts: function() {
     /*var posts = [
       {
@@ -547,7 +546,6 @@ define({
     kony.print("Posts >> " + JSON.stringify(data));
     this.view.segPosts.setData(data);
   },
-  
   closePop:function(){
     animate(this.view.flxOuterBox,{centerY:"150%"},0.25,this.closePopup);
   },

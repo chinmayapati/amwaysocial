@@ -31,7 +31,7 @@ define({
       animate(this.view.flxMsg, { centerY: "30%" }, 1, function(){
         animate(this, {centerY: "30%"}, 1, function(){
           var nav = new kony.mvc.Navigation("frmDashBoard");
-          nav.navigate();
+          nav.navigate(3);
         }, 1);
       });
     }

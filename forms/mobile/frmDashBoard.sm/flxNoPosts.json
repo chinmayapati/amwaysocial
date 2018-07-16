@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s4db25e70bfc4c89b4bf9258f8b6ed7b",
+    "_skin_": "se393e66aa6242a397d01ac9ac8499fb",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -36,15 +36,15 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblNoPosts"
+        "CopylblNoPosts0c48d054d85744b"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxNoPosts",
     "info": null,
-    "isvisible": false,
-    "kuid": "i61cc9b3ca5f4797b6ad5ea9cdf095ab",
+    "isvisible": true,
+    "kuid": "faf963d2d2bf4fc98a6b8e66802edbb2",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxTab3",

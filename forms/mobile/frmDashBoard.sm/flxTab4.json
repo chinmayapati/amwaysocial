@@ -36,7 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxNotifications"
+        "flxNotifications",
+        "flxNoNotifications"
     ],
     "clipbounds": true,
     "containerweight": 100,
