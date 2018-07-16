@@ -1,13 +1,14 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
-    "_bottom_": {
+    "_height_": {
         "type": "string",
-        "value": "13%"
+        "value": "50dp"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "10dp"
     },
     "_margin_": [
         0,
@@ -23,10 +24,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s4ddc51396c0421c9c2ca1f907f4d17b",
+    "_skin_": "s580fb5d20b046deb13f4368af07bb2d",
     "_top_": {
         "type": "string",
-        "value": "9%"
+        "value": "15%"
     },
     "_width_": {
         "type": "string",
@@ -35,20 +36,24 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "TotalEarns",
-        "ChainFlex"
+        "totalEarnLbl",
+        "totalEarnedLbl"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxTab2",
+    "id": "flxInformation",
     "info": null,
     "isvisible": true,
-    "kuid": "db4795c0cc4c4f5cb2b04a9889f14918",
+    "kuid": "c5702a1e17584519bee1886c5c941616",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOuter",
+    "parent": "flxGrp1",
     "pf": "frmDashBoard",
     "snapgridsize": 10,
     "snaptogrid": true,

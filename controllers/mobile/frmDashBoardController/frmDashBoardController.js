@@ -200,6 +200,77 @@ define({
     this.view.preShow = this.handlePreshow;
     this.view.onDeviceBack = function() { kony.application.exit(0); };    
   },
+  increamentCustCounter : function()
+  {
+    if(custCounter <= custCounterVal )
+      {
+        this.view.custCountLbl.text = "+" + parseInt(custCounter) + " Customers";
+        custCounter+=1;
+      }
+    else
+      {
+        try
+	{
+		kony.timer.cancel("mytimer");
+	} 
+	catch(err)
+	{
+		alert("error in second button onclick and err is:: "+err);
+	}
+      }
+  },
+  increamenttotalCounter : function()
+  {
+    if(totalEarningCounter <= totalEarningVal )
+      {
+        this.view.totalEarnedLbl.text = parseInt(totalEarningCounter) + "K";
+        totalEarningCounter+=1;
+      }
+    else
+      {
+        try
+	{
+		kony.timer.cancel("totalEarn");
+	} 
+	catch(err)
+	{
+		alert("error in second button onclick and err is:: "+err);
+	}
+      }
+  },
+  increamentChainCounter : function()
+  {
+    if(chainEarningCounter <= chainEarningVal )
+      {
+        this.view.chainEarnedLbl.text = parseInt(chainEarningCounter) + "K";
+        chainEarningCounter+=1;
+      }
+    else
+      {
+        try
+	{
+		kony.timer.cancel("chainEarn");
+	} 
+	catch(err)
+	{
+		alert("error in second button onclick and err is:: "+err);
+	}
+      }
+  },
+  animateCounter : function()
+  {
+    if(tabFlag===1)
+      {
+    var customerTimer = parseFloat(1/custCounterVal);
+    kony.timer.schedule("customer",this.increamentCustCounter,customerTimer,true);
+    var totalEarnTimer = parseFloat(1/totalEarningVal);
+    kony.timer.schedule("totalEarn",this.increamenttotalCounter,totalEarnTimer,true);
+    var chainEarnTimer = parseFloat(1/chainEarningVal);
+    kony.timer.schedule("chainEarn",this.increamentChainCounter,chainEarnTimer,true);
+    //alert(totalEarnTimer + " " + chainEarnTimer);
+     tabFlag=0; 
+      }
+},
   animateLine : function() {
     var self = this;
 
@@ -569,7 +640,8 @@ define({
     this.view.flxGraph.add(chart);
   },
   getEarnings:function(){
-
+	this.animateLine();
+    this.animateCounter();
   },
   kdv_createChartWidget:function () {
     var chartObj = controllerReference.kdv_createChartJSObject();

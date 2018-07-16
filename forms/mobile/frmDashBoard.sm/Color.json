@@ -1,13 +1,14 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
-    "_bottom_": {
+    "_height_": {
         "type": "string",
-        "value": "13%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "-100%"
     },
     "_margin_": [
         0,
@@ -23,10 +24,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s4ddc51396c0421c9c2ca1f907f4d17b",
+    "_skin_": "sa2932968fb8401a817d3f123b7ccdab",
     "_top_": {
         "type": "string",
-        "value": "9%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -35,20 +36,17 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "TotalEarns",
-        "ChainFlex"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxTab2",
+    "id": "Color",
     "info": null,
     "isvisible": true,
-    "kuid": "db4795c0cc4c4f5cb2b04a9889f14918",
+    "kuid": "icfbb37e5feb4f18bfd42af9fbde3fdd",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOuter",
+    "parent": "ProgressFlex",
     "pf": "frmDashBoard",
     "snapgridsize": 10,
     "snaptogrid": true,

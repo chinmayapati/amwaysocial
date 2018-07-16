@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "50dp"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10dp"
     },
     "_margin_": [
         0,
@@ -24,33 +24,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s8610b3d149c4c168de92158829850b6",
+    "_skin_": "s2c4249ba75244f98e6087958574ae6e",
     "_top_": {
         "type": "string",
-        "value": "150dp"
+        "value": "15.06%"
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "47.72%"
     },
-    "children": [],
+    "children": [
+        "chainEarnLbl",
+        "chainEarnedLbl"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxDialer",
+    "id": "chainEarnFlx",
     "info": null,
     "isvisible": true,
-    "kuid": "d801dac2f4b944a2b7435013640d801a",
+    "kuid": "b70dd915a0574ed3883a3f1d3d079bd9",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxTab2",
+    "parent": "parentChainFlex",
     "pf": "frmDashBoard",
     "snapgridsize": 10,
     "snaptogrid": true,
