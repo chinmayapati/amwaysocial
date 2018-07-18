@@ -174,7 +174,7 @@ define({
         "text": "0"
       },
       "imgArticle": {
-        "src": "p1.png",
+        "rawBytes": this.view.imgPost.rawBytes
       },
       //"imgWithTags": this.imgWithTags,
       //"imgWithoutTags" : this.imgWithoutTags,
