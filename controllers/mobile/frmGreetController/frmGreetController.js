@@ -10,42 +10,34 @@ define({
   },
   handlePostshow: function() {
     kony.print("Entered post show");
-    if(serviceFailed) {
-      this.view.flxMsg.centerY = "30%";
-      this.view.lblMsg.text = "Service Failed.";
-      this.view.flxLoading.isVisible = false;
-      this.view.flxMsg.isVisible = true;
-    }
-    else {
-      this.view.lblMsg.text = "Hello " + (user ? user.name.split(" ")[0] : "John") + "!";
+     this.view.lblMsg.text = "Hello " + (user ? user.name.split(" ")[0] : "John") + "!";
 
-      this.view.flxLoading.isVisible = false;
-      this.view.flxMsg.isVisible = true;
-      animate(this.view.flxMsg, { centerY: "30%" }, 1, function(){
-        animate(this, {centerY: "30%"}, 1, function(){
-          
-          // Sync With Store
-          var storedPosts = JSON.parse(kony.store.getItem("posts"));
-          kony.print("Match Greet>> " + JSON.stringify(storedPosts));
-          for(var i in posts) {
-            for(var j in storedPosts) {
-              if( !storedPosts[j].lblDesc ) continue;
-              storedPosts[j].lblDesc.text = storedPosts[j].lblDesc.text.replace("<div>","").replace("</div>","");
-              kony.print("Match >> " + posts[i].message + " :: " + storedPosts[j].lblDesc.text);
-              if( posts[i].message == storedPosts[j].lblDesc.text ) {
-                storedPosts[j].countLike = posts[i].reactions;
-                storedPosts[j].countComment = posts[i].commentsCount;
-                storedPosts[j].countShare = posts[i].sharesCount;              
-              }
+    this.view.flxLoading.isVisible = false;
+    this.view.flxMsg.isVisible = true;
+    animate(this.view.flxMsg, { centerY: "30%" }, 1, function(){
+      animate(this, {centerY: "30%"}, 1, function(){
+
+        // Sync With Store
+        var storedPosts = JSON.parse(kony.store.getItem("posts"));
+        kony.print("Match Greet>> " + JSON.stringify(storedPosts));
+        for(var i in posts) {
+          for(var j in storedPosts) {
+            if( !storedPosts[j].lblDesc ) continue;
+            storedPosts[j].lblDesc.text = storedPosts[j].lblDesc.text.replace("<div>","").replace("</div>","");
+            kony.print("Match >> " + posts[i].message + " :: " + storedPosts[j].lblDesc.text);
+            if( posts[i].message == storedPosts[j].lblDesc.text ) {
+              storedPosts[j].countLike = posts[i].reactions;
+              storedPosts[j].countComment = posts[i].commentsCount;
+              storedPosts[j].countShare = posts[i].sharesCount;              
             }
           }
-          kony.store.setItem("posts", JSON.stringify(storedPosts));
+        }
+        kony.store.setItem("posts", JSON.stringify(storedPosts));
 
-          var nav = new kony.mvc.Navigation("frmDashBoard");
-          nav.navigate(3);
-        }, 1);
-      });
-    }
+        var nav = new kony.mvc.Navigation("frmDashBoard");
+        nav.navigate(3);
+      }, 1);
+    });
   },  
   checkUser: function() {
     if(user && user.error) {
