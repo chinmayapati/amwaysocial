@@ -155,15 +155,14 @@ define({
     var filePath = kony.io.FileSystem.getExternalStorageDirectoryPath()+"/Download/";
     var sharedDir = filePath+constants.FILE_PATH_SEPARATOR+"images";
     var sharefolder = new kony.io.File(sharedDir).createDirectory();
-    var fileLoc = sharedDir+constants.FILE_PATH_SEPARATOR+imageName+".jpg";
+    var fileLoc = sharedDir+constants.FILE_PATH_SEPARATOR+imageName+".png";
     var myfile=new kony.io.File(fileLoc).createFile();
     var write=new kony.io.File(fileLoc).write(testRaw);
 
     var dateObj = new Date();
     var date = dateObj.toDateString();
     var obj ={
-      "imageName":imageName,
-      "flxPost": {"shadowDepth": 0},
+      "imageName":imageName+"",
       "flxArticle":{"isVisible":true},
       "countComment": {
         "text": "0"
@@ -175,10 +174,10 @@ define({
         "text": "0"
       },
       "imgArticle": {
-        "src": this.imgWithoutTags
+        "src": "p1.png",
       },
-      "imgWithTags": this.imgWithTags,
-      "imgWithoutTags" : this.imgWithoutTags,
+      //"imgWithTags": this.imgWithTags,
+      //"imgWithoutTags" : this.imgWithoutTags,
       "showTags" : false,
       "imgComment": {
         "src": "commentactive1.png"
@@ -192,8 +191,8 @@ define({
       "imgShare": {
         "src": "shareactive1.png"
       },
-      "lblCount": {
-        "text": hashtagCount > 4  ? "+"+(hashtagCount-4).toFixed(0) : "+"+hashtagCount,
+      "lblCount": {        
+        "text": hashtagCount > 4  ? "+"+((hashtagCount-4).toFixed(0)) : "+"+hashtagCount,
         "isVisible": hashtagCount >4 ? true:false
       },
       "lblDesc": {
@@ -261,7 +260,7 @@ define({
     this.view.imgPost.isVisible = true;
     this.view.footer.isVisible = false;
     this.view.flxAddPhoto.onClick = null;
-   // this.view.imgPost.onTouchEnd = this.addTag;
+    this.view.imgPost.onTouchEnd = this.addTag;
    // this.view.flxDescription.shadowDepth = 7;
     //this.view.flxSave.shadowDepth = 7;
     //this.view.flxDiscard.shadowDepth = 7;

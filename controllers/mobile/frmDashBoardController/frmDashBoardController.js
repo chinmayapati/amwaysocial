@@ -125,7 +125,10 @@ define({
     //this.view.flxCircle.shadowDepth = 2;
     //this.view.flxHeader.shadowDepth = 3;
     //this.view.flxGraph.shadowDepth = 3;
+    
     this.selectedTab(curTab);
+    
+    kony.print("2");
     this.view.flxCamera.onClick = this.navNewPost;
     this.view.flxPopup.onClick = this.closePop;
     this.view.flxGalleryBtn.onClick = this.openGallery;
@@ -222,7 +225,7 @@ define({
       }
     ];
     this.view.segNotifications.setData(data);
-    
+    kony.print("3");
     if(post.hasOwnProperty("flxMore"))
       post.flxMore.onClick = this.shareContent;
 
@@ -236,15 +239,21 @@ define({
     
     if(!blank) {
       posts.unshift(post);      
-      kony.store.setItem("posts", JSON.stringify(posts));
     }
     post={};
     this.view.flxNoPosts.isVisible = posts.length===0;
+    
+    kony.print("Preshow data is -" +JSON.stringify(posts));
+    
+    
     this.view.segPosts.setData(posts);
     //this.loadNotifications();
 
     // Set Posts
     // this.loadPosts();
+    
+    
+    kony.print("4");
   },
   shareContent:function(){
     var selectedIndex = this.view.segPosts.selectedIndex[1];
@@ -277,6 +286,7 @@ define({
   },
   selectedTab:function(tabId){
     
+    kony.print("7");
     if(this.view["imgInActive"+tabId].isVisible){
       for(var i=1;i<=4;i++){
         if(i!=tabId){
@@ -315,6 +325,9 @@ define({
       this.view.lblTraffic.isVisible = false;
       this.view.lblEarnings.isVisible = false;
     }
+    
+    
+    kony.print("8");
   },
   toggleTabs:function(tab){
     var tabId = (tab.id)[(tab.id).length-1];
@@ -433,8 +446,8 @@ define({
     kony.print("Post Loading >> " + JSON.stringify(data) );
     this.view.flxNoPosts.isVisible = data.length === 0;
     kony.print("Posts >> Length = " + data.length);
-    kony.print("Posts >> " + JSON.stringify(data));
-    this.view.segPosts.setData(data);
+    kony.print("Posts in load Post>> " + JSON.stringify(data));
+    //this.view.segPosts.setData(data);
   },
   closePop:function(){
     animate(this.view.flxOuterBox,{centerY:"150%"},0.25,this.closePopup);
