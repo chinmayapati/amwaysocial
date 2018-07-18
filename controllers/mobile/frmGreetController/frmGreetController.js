@@ -1,21 +1,15 @@
 define({ 
 
   onNavigate: function() {
-    //this.view.postShow = this.handlePostshow;
+    kony.print("Entered navigation");
+    this.view.postShow = this.handlePostshow;
     this.view.flxMsg.centerY = "50%";
     this.view.flxMsg.isVisible = false;
     this.view.flxLoading.isVisible = true;
-
-    if( !user || !posts || !notifications || !traffic || !earnings ) {
-      kony.print("No user data found.");
-      try {
-        kony.timer.schedule("getuser", this.checkUser, 1, true);
-      } catch(e) { kony.print("Error setting timer: " + JSON.stringify(e)); }
-    }
-    else this.handlePostshow();
     
   },
   handlePostshow: function() {
+    kony.print("Entered post show");
     if(serviceFailed) {
       this.view.flxMsg.centerY = "30%";
       this.view.lblMsg.text = "Service Failed.";

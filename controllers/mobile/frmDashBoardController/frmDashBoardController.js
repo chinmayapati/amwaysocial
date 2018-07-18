@@ -1,6 +1,7 @@
 define({ 
 
   onNavigate:function(tab){
+    kony.print("Entered dashboard navigation");
     controllerReference = this;
     curTab = tab ?tab :3;
     this.view.preShow = this.handlePreshow;
@@ -118,7 +119,7 @@ define({
   },
   handlePreshow:function(){
     //this.posts = JSON.parse(kony.store.getItem("posts"));
-
+    
     this.view.footer.shadowDepth = 5;
     this.view.flxCamera.shadowDepth = 8;
     this.view.flxCircle.shadowDepth = 2;
@@ -230,7 +231,7 @@ define({
     
     var blank = true;
     for(var j in post){ 
-      if(post[j]) { blank = false; break; }      
+      if(post[j]) { blank = false; break; }
     }
     
     if(!blank) {
