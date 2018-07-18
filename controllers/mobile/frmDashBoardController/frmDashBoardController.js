@@ -120,11 +120,11 @@ define({
   handlePreshow:function(){
     //this.posts = JSON.parse(kony.store.getItem("posts"));
     
-    this.view.footer.shadowDepth = 5;
-    this.view.flxCamera.shadowDepth = 8;
-    this.view.flxCircle.shadowDepth = 2;
-    this.view.flxHeader.shadowDepth = 3;
-    this.view.flxGraph.shadowDepth = 3;
+    //this.view.footer.shadowDepth = 5;
+    //this.view.flxCamera.shadowDepth = 8;
+    //this.view.flxCircle.shadowDepth = 2;
+    //this.view.flxHeader.shadowDepth = 3;
+    //this.view.flxGraph.shadowDepth = 3;
     this.selectedTab(curTab);
     this.view.flxCamera.onClick = this.navNewPost;
     this.view.flxPopup.onClick = this.closePop;

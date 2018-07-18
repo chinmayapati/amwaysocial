@@ -37,8 +37,8 @@ define({
   },
 
   handlePreshow:function(){
-    this.view.flxButtons.shadowDepth = 3;
-    this.view.flxAddPhoto.shadowDepth = 1;
+    //this.view.flxButtons.shadowDepth = 3;
+    //this.view.flxAddPhoto.shadowDepth = 1;
     this.view.segSearchResults.removeAll();
     this.view.segSearchResults.onRowClick = this.createTag;
     this.view.flxSearch.onClick = this.doNothing;
@@ -163,7 +163,7 @@ define({
     var date = dateObj.toDateString();
     var obj ={
       "imageName":imageName,
-      "flxPost": {"shadowDepth": 5},
+      "flxPost": {"shadowDepth": 0},
       "flxArticle":{"isVisible":true},
       "countComment": {
         "text": "0"
@@ -244,10 +244,10 @@ define({
 
   closeSearch:function(){
     this.view.flxSearch.top = "100%";
-    this.view.flxDescription.shadowDepth = 7;
-    this.view.flxSave.shadowDepth = 7;
-    this.view.flxDiscard.shadowDepth = 7;
-    this.view.flxAddPhoto.shadowDepth = 1;
+   // this.view.flxDescription.shadowDepth = 7;
+    //this.view.flxSave.shadowDepth = 7;
+    //this.view.flxDiscard.shadowDepth = 7;
+    //this.view.flxAddPhoto.shadowDepth = 1;
   },
 
   setImage:function(rawBytes){
@@ -261,10 +261,10 @@ define({
     this.view.imgPost.isVisible = true;
     this.view.footer.isVisible = false;
     this.view.flxAddPhoto.onClick = null;
-    this.view.imgPost.onTouchEnd = this.addTag;
-    this.view.flxDescription.shadowDepth = 7;
-    this.view.flxSave.shadowDepth = 7;
-    this.view.flxDiscard.shadowDepth = 7;
+   // this.view.imgPost.onTouchEnd = this.addTag;
+   // this.view.flxDescription.shadowDepth = 7;
+    //this.view.flxSave.shadowDepth = 7;
+    //this.view.flxDiscard.shadowDepth = 7;
     animate(this.view.flxDescription, {"bottom":"-5%"}, 0.7,this.animateSaveFlx);
 
 
@@ -402,11 +402,11 @@ define({
     gblX = x;
     gblY = y;
     this.view.txtSearch.text = "";
-    this.view.flxButtons.shadowDepth = 0;
-    this.view.flxAddPhoto.shadowDepth = 0;
-    this.view.flxDescription.shadowDepth = 0;
-    this.view.flxSave.shadowDepth = 0;
-    this.view.flxDiscard.shadowDepth =0;
+    //this.view.flxButtons.shadowDepth = 0;
+    //this.view.flxAddPhoto.shadowDepth = 0;
+    //this.view.flxDescription.shadowDepth = 0;
+    //this.view.flxSave.shadowDepth = 0;
+    //this.view.flxDiscard.shadowDepth =0;
     this.view.segSearchResults.removeAll();
     this.view.flxSearch.top = 0;
   },
@@ -437,7 +437,7 @@ define({
   },
 
   openPop:function(){
-    this.view.flxAddPhoto.shadowDepth = 0;
+    //this.view.flxAddPhoto.shadowDepth = 0;
     this.view.flxPopup.top = "0%";
     animate(this.view.flxOuterBox,{centerY:"45%"},0.35);
     this.view.flxPopup.skin = "opacity40";    
@@ -448,7 +448,7 @@ define({
   },
 
   closePopup:function(){
-    this.view.flxAddPhoto.shadowDepth = 1;
+    //this.view.flxAddPhoto.shadowDepth = 1;
     this.view.flxPopup.skin = "opacity0";
     this.view.flxPopup.top = "-100%";
   },

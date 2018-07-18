@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "sc383dc6c5d34f05b13a9c28be046342",
-    "_src_": "dummy.jpg",
+    "_src_": "option3.png",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -38,7 +38,7 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "segments",
         "topLevelBox": null
     },

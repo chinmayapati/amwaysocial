@@ -46,7 +46,7 @@
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "hbc42bb8e20d410cbbc490bc15fb0372",
     "name": "kony.ui.Image2",
     "parent": "flxBadge",
