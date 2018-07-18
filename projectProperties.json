@@ -6,7 +6,7 @@
     "wap_android440_fontsize": "15",
     "apppackagekey": "",
     "nativeContainerProperties": {
-        "isModified": true,
+        "isModified": false,
         "isEnableJSContainer": true,
         "isEnableJSContainerAndroid": true,
         "isEnableJSContaineriOS": false
@@ -19,7 +19,7 @@
     },
     "appversionkey": "1.0.0",
     "project.type": "js",
-    "startupformkey": "frmDashBoard",
+    "startupformkey": "frmGreet",
     "wap_bb480_fontsize": "17",
     "wap_winphone480_fontsize": "12",
     "wap_android640_fontsize": "19",
@@ -199,7 +199,7 @@
     "mwhttpsportkey": "",
     "wap_bb440_fontsize": "15",
     "wap_bb400_fontsize": "14",
-    "appidkey": "Amway1",
+    "appidkey": "AmwaySocial",
     "statusBarHidden": "false",
     "wap_bb360_fontsize": "13",
     "isNewAppWithRespectToAndroidPackageName": "",
